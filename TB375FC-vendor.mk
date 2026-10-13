@@ -150,8 +150,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomposer_ext.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libfuse-lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfuse-lite.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libgpud_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libgpud_sys.so \
+    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtkperf_client.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libneuron_graph_delegate.mtk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libntfs-3g.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libntfs-3g.so \
+    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libpowerhalwrap.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpowerhalwrap.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsink.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libtflite_mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libtflite_mtk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libudf.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libudf.so \
@@ -169,6 +171,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mms@1.1.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mms@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mms@1.2.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mms@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mms@1.3.so \
+    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.1.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.2.so \
@@ -182,6 +185,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/awk:$(TARGET_COPY_OUT_VENDOR)/bin/awk \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/boringssl_self_test32:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test32 \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
+    vendor/lenovo/TB375FC/proprietary/vendor/bin/chipinfo:$(TARGET_COPY_OUT_VENDOR)/bin/chipinfo \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6897/ParameterDB_ae.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6897/ParameterDB_ae.db \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6897/ParameterDB_af.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6897/ParameterDB_af.db \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6897/ParameterDB_awb.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6897/ParameterDB_awb.db \
@@ -248,10 +252,14 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/dmabuf_dump:$(TARGET_COPY_OUT_VENDOR)/bin/dmabuf_dump \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
+    vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service.mediatek \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.health-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.example \
+    vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.memtrack-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack-service.mediatek \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.beanpod:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@3.0-service.beanpod \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors-service.multihal \
+    vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.thermal-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal-service.mediatek \
+    vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator-service.mediatek \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.wifi-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi-service-lazy \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897 \
@@ -261,6 +269,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/rkp_factory_extraction_tool64:$(TARGET_COPY_OUT_VENDOR)/bin/rkp_factory_extraction_tool64 \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/sh:$(TARGET_COPY_OUT_VENDOR)/bin/sh \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/toolbox:$(TARGET_COPY_OUT_VENDOR)/bin/toolbox \
+    vendor/lenovo/TB375FC/proprietary/vendor/bin/wlan_assistant:$(TARGET_COPY_OUT_VENDOR)/bin/wlan_assistant \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/AudioDump_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioDump_dynamic.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
@@ -884,6 +893,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libaudio_aidl_conversion_common_ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_aidl_conversion_common_ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
@@ -906,9 +916,14 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwbinder.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_mtk.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediautils_vendor.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemunreachable.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkperf_client_vendor.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpcap.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfctl_vendor.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libruy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libruy.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
@@ -921,6 +936,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/mt6897/libpqconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6897/libpqconfig.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/shared-file-region-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/shared-file-region-aidl-cpp.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/vendor.mediatek.hardware.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio-V1-ndk.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower-V1-ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.1.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.2.so \
@@ -1047,6 +1066,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/lib_android_keymaster_keymint_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_android_keymaster_keymint_utils.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libaimemc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaimemc.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_aidl_conversion_common_ndk.so \
@@ -1083,15 +1103,20 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libimage_io.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimage_io.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libjpegdecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegdecoder.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libjpegencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegencoder.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libkeymint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymint.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemunreachable.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libmtkcam_grallocutils_aidlv1helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_grallocutils_aidlv1helper.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkperf_client_vendor.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpcap.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfctl_vendor.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpuresoftkeymasterdevice.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libruy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libruy.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
@@ -1113,6 +1138,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/mt6897/libpqconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6897/libpqconfig.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/shared-file-region-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/shared-file-region-aidl-cpp.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/vendor.mediatek.hardware.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio-V1-ndk.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower@1.1.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower@1.2.so \
@@ -1188,7 +1217,6 @@ PRODUCT_PACKAGES += \
     libaal_key \
     libaal_sec \
     libadpcmdec_mtk \
-    libaedv \
     libapmonitor_vendor \
     libapu_mdw \
     libapu_mdw_batch \
@@ -1271,11 +1299,9 @@ PRODUCT_PACKAGES += \
     libhidparser \
     libhwm \
     libicd_decoder \
-    libion_mtk \
     libion_ulit \
     libkeystore-wifi-hidl \
     libksensor \
-    libladder \
     libminiui \
     libmmprofile \
     libmnetlink_v104 \
@@ -1290,7 +1316,6 @@ PRODUCT_PACKAGES += \
     libmtkhardware_legacy \
     libmtklimiter_vendor \
     libmtknetutils \
-    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
     libmtkshifter_vendor \
@@ -1340,12 +1365,10 @@ PRODUCT_PACKAGES += \
     libnxp_extamp_intf \
     liboem_specific \
     liboemcrypto \
-    libperfctl_vendor \
     libpixelflinger \
     libpkm \
     libpower_timer \
     libpowerhal \
-    libpowerhalwrap_vendor \
     libpqframework \
     libpqhdrmetaparser \
     libpqsharememory \
@@ -1503,9 +1526,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.audio@8.1 \
-    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
@@ -1521,7 +1541,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.3 \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V1-ndk \
     vendor.mediatek.hardware.netdagent-V1-ndk \
     vendor.mediatek.hardware.netdagent@1.0 \
@@ -2066,7 +2085,6 @@ PRODUCT_PACKAGES += \
     libmtk_vt_service \
     libmtk_vt_wrapper \
     libmtkaudio_utils \
-    libmtkperf_client \
     libmvpu_cic_ci_compiler.mtk \
     libmvpu_cic_ci_compiler_25.mtk \
     libmvpu_cic_ci_compiler_30.mtk \
@@ -2111,7 +2129,6 @@ PRODUCT_PACKAGES += \
     libovbundle \
     libpcap_bak \
     libperfctl \
-    libpowerhalwrap \
     libpowerhalwrap_jni \
     libsbectl \
     libsf_cpupolicy \
@@ -2178,7 +2195,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.log@1.0 \
     vendor.mediatek.hardware.mbrain-V2-ndk \
     vendor.mediatek.hardware.mmlpq-V4-ndk \
-    vendor.mediatek.hardware.mtkpower-V2-ndk \
     vendor.mediatek.hardware.mtkpower-V3-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
     vendor.mediatek.hardware.mtkradioex@3.0 \
@@ -2218,7 +2234,6 @@ PRODUCT_PACKAGES += \
     bt_dump \
     ccci_mdinit \
     ccci_rpcd \
-    chipinfo \
     conninfra_loader \
     dconfig_flashless \
     dcxosetcap \
@@ -2236,7 +2251,6 @@ PRODUCT_PACKAGES += \
     gps_dump \
     gsm0710muxd \
     hostapd_cli \
-    android.hardware.audio.service.mediatek \
     android.hardware.biometrics.fingerprint-service \
     android.hardware.bluetooth-service-mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
@@ -2247,13 +2261,10 @@ PRODUCT_PACKAGES += \
     android.hardware.lights-service.mediatek \
     android.hardware.media.c2@1.2-mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
-    android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.neuralnetworks-shim-service-mtk-lazy \
-    android.hardware.thermal-service.mediatek \
     android.hardware.usb-aidl-service.mediatekv1.0 \
     android.hardware.usb.gadget-aidl-service.mediatekv1.0 \
-    android.hardware.vibrator-service.mediatek \
     dvs-hidl-service \
     interfaces.factoryInterface@1.0-service \
     motorola.hardware.input@1.1-service \
@@ -2322,7 +2333,6 @@ PRODUCT_PACKAGES += \
     vpud \
     wifi_dump \
     wifitest \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader \
     wpa_cli \

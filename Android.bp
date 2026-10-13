@@ -1606,7 +1606,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libbinder_ndk",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -1624,7 +1623,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libbinder_ndk",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -2164,54 +2162,6 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaedv",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaedv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libunwindstack",
-                "libselinux",
-                "liblog",
-                "libz",
-                "libc",
-                "libdl",
-                "libm",
-                "libc++",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaedv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libunwindstack",
-                "libselinux",
-                "liblog",
-                "libz",
-                "libc",
-                "libdl",
-                "libm",
-                "libc++",
             ],
         },
     },
@@ -3317,8 +3267,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "libbase",
                 "libcutils",
                 "libfmq",
@@ -3336,8 +3284,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "libbase",
                 "libcutils",
                 "libfmq",
@@ -3853,7 +3799,6 @@ cc_prebuilt_library_shared {
                 "libcodec2_vndk",
                 "libutils",
                 "libion",
-                "libion_mtk",
                 "libdmabufheap",
                 "libc++",
                 "libc",
@@ -3876,7 +3821,6 @@ cc_prebuilt_library_shared {
                 "libcodec2_vndk",
                 "libutils",
                 "libion",
-                "libion_mtk",
                 "libdmabufheap",
                 "libc++",
                 "libc",
@@ -4895,7 +4839,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libformatter.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libdmabufheap",
                 "libutils",
                 "libion",
@@ -4914,7 +4857,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libformatter.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libdmabufheap",
                 "libutils",
                 "libion",
@@ -6078,50 +6020,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libion_mtk",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libion_mtk.so",
-            ],
-            shared_libs: [
-                "libion",
-                "liblog",
-                "libion_ulit",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libion_mtk.so",
-            ],
-            shared_libs: [
-                "libion",
-                "liblog",
-                "libion_ulit",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libion_ulit",
     check_elf_files: false,
     owner: "lenovo",
@@ -6136,7 +6034,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "liblog",
-                "libladder",
                 "libc++",
                 "libc",
                 "libm",
@@ -6150,7 +6047,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "liblog",
-                "libladder",
                 "libc++",
                 "libc",
                 "libm",
@@ -6239,48 +6135,6 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libc",
                 "libm",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libladder",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libladder.so",
-            ],
-            shared_libs: [
-                "libunwindstack",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libladder.so",
-            ],
-            shared_libs: [
-                "libunwindstack",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -6871,58 +6725,6 @@ cc_prebuilt_library_shared {
                 "libmtkproperty",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtkperf_client_vendor",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmtkperf_client_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "libcutils",
-                "libc",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtkperf_client_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "libcutils",
-                "libc",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -7740,7 +7542,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbase",
                 "libion",
-                "libion_mtk",
                 "liblog",
                 "libcutils",
                 "libapu_mdw",
@@ -7758,7 +7559,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbase",
                 "libion",
-                "libion_mtk",
                 "liblog",
                 "libcutils",
                 "libapu_mdw",
@@ -7790,7 +7590,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbase",
                 "libion",
-                "libion_mtk",
                 "liblog",
                 "libcutils",
                 "libapu_mdw",
@@ -7808,7 +7607,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbase",
                 "libion",
-                "libion_mtk",
                 "liblog",
                 "libcutils",
                 "libapu_mdw",
@@ -8117,7 +7915,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libmvpu_cic_ci_compiler",
                 "libmvpu_pattern",
@@ -8138,7 +7935,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libmvpu_cic_ci_compiler",
                 "libmvpu_pattern",
@@ -8173,7 +7969,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libmvpu_cic_ci_compiler_25",
                 "libmvpu_pattern_25",
@@ -8194,7 +7989,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libmvpu_cic_ci_compiler_25",
                 "libmvpu_pattern_25",
@@ -8229,7 +8023,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libmvpu_cic_ci_compiler_25",
                 "libmvpu_pattern_25_pub",
@@ -8250,7 +8043,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libmvpu_cic_ci_compiler_25",
                 "libmvpu_pattern_25_pub",
@@ -8365,7 +8157,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libmvpu_cic_ci_compiler",
                 "libmvpu_pattern_pub",
@@ -8386,7 +8177,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libmvpu_cic_ci_compiler",
                 "libmvpu_pattern_pub",
@@ -8421,7 +8211,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libc",
                 "libc++",
@@ -8437,7 +8226,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libc",
                 "libc++",
@@ -9060,7 +8848,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libc++",
@@ -9078,57 +8865,10 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libperfctl_vendor",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libperfctl_vendor.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "libui",
-                "libutils",
-                "libexpat",
-                "liblog",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libperfctl_vendor.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "libui",
-                "libutils",
-                "libexpat",
-                "liblog",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -9308,8 +9048,6 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "vendor.mediatek.hardware.netdagent@1.0",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "libpower_timer",
                 "libged",
                 "libfmq",
@@ -9339,8 +9077,6 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "vendor.mediatek.hardware.netdagent@1.0",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "libpower_timer",
                 "libged",
                 "libfmq",
@@ -9351,60 +9087,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.bluetooth.audio-V3-ndk",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpowerhalwrap_vendor",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libpowerhalwrap_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "libcutils",
-                "libc",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
-                "vendor.mediatek.hardware.mtkpower_applist-V1-ndk",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpowerhalwrap_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "libcutils",
-                "libc",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
-                "vendor.mediatek.hardware.mtkpower_applist-V1-ndk",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -10705,7 +10387,6 @@ cc_prebuilt_library_shared {
                 "libnetutils",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -10722,7 +10403,6 @@ cc_prebuilt_library_shared {
                 "libnetutils",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -10750,7 +10430,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libmtk_drvb",
-                "libmtkperf_client_vendor",
                 "libc++",
                 "libdl",
                 "libc",
@@ -11888,7 +11567,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libion",
-                "libion_mtk",
                 "libdmabufheap",
                 "libSQLiteModule_VER_ALL",
                 "libaaa_afassist_V2",
@@ -11912,7 +11590,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libion",
-                "libion_mtk",
                 "libdmabufheap",
                 "libSQLiteModule_VER_ALL",
                 "libaaa_afassist_V2",
@@ -12773,7 +12450,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/mt6897/libcamalgo.platform2.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libmtkcam_tuning_utils",
@@ -12789,7 +12465,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6897/libcamalgo.platform2.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libmtkcam_tuning_utils",
@@ -12874,7 +12549,6 @@ cc_prebuilt_library_shared {
                 "libSQLiteModule_VER_ALL",
                 "libDBAccessor_ISP",
                 "liblog",
-                "libaedv",
                 "libutils",
                 "libcutils",
                 "lib3a.stat",
@@ -12903,7 +12577,6 @@ cc_prebuilt_library_shared {
                 "libSQLiteModule_VER_ALL",
                 "libDBAccessor_ISP",
                 "liblog",
-                "libaedv",
                 "libutils",
                 "libcutils",
                 "lib3a.stat",
@@ -13122,7 +12795,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libaedv",
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libmtkcam_metadata",
@@ -13153,7 +12825,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libaedv",
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libmtkcam_metadata",
@@ -13320,7 +12991,6 @@ cc_prebuilt_library_shared {
                 "libged",
                 "libgpud",
                 "libgralloc_extra",
-                "libladder",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
                 "libcutils",
@@ -13346,7 +13016,6 @@ cc_prebuilt_library_shared {
                 "libged",
                 "libgpud",
                 "libgralloc_extra",
-                "libladder",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
                 "libcutils",
@@ -13383,7 +13052,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libimgsys_system",
                 "libimgsys_utils",
@@ -13404,7 +13072,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libimgsys_system",
                 "libimgsys_utils",
@@ -13531,7 +13198,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/mt6897/libimgsys_dip.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libimgsys_system",
@@ -13553,7 +13219,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6897/libimgsys_dip.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libimgsys_system",
@@ -13590,7 +13255,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/mt6897/libimgsys_drvcommon.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libion",
                 "libimgsys_system",
                 "libcutils",
@@ -13608,7 +13272,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6897/libimgsys_drvcommon.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libion",
                 "libimgsys_system",
                 "libcutils",
@@ -13694,7 +13357,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libdmabufheap",
-                "libion_mtk",
                 "libion",
                 "libimgsys_system",
                 "libimgsys_utils",
@@ -13716,7 +13378,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libdmabufheap",
-                "libion_mtk",
                 "libion",
                 "libimgsys_system",
                 "libimgsys_utils",
@@ -13752,7 +13413,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libimgsys_system",
@@ -13774,7 +13434,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libimgsys_system",
@@ -13812,7 +13471,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libimgsys_utils",
                 "libimgsys_custom",
@@ -13832,7 +13490,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libimgsys_utils",
                 "libimgsys_custom",
@@ -13863,7 +13520,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/mt6897/libimgsys_taskhandler.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libion",
                 "libimgsys_utils",
                 "libimgsys_system",
@@ -13891,7 +13547,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6897/libimgsys_taskhandler.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libion",
                 "libimgsys_utils",
                 "libimgsys_system",
@@ -13988,7 +13643,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libaedv",
                 "libimgsys_system",
                 "libc++",
                 "libc",
@@ -14004,7 +13658,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libaedv",
                 "libimgsys_system",
                 "libc++",
                 "libc",
@@ -14035,7 +13688,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libimgsys_system",
@@ -14057,7 +13709,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libimgsys_system",
@@ -14137,7 +13788,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libimgsys_system",
@@ -14159,7 +13809,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libimgsys_system",
@@ -14430,7 +14079,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libladder",
                 "libc++",
                 "libc",
                 "libm",
@@ -14445,7 +14093,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libladder",
                 "libc++",
                 "libc",
                 "libm",
@@ -15120,7 +14767,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libmtkcam_ulog",
                 "libion",
-                "libion_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -15138,7 +14784,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libmtkcam_ulog",
                 "libion",
-                "libion_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -16622,148 +16267,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "android.hardware.audio.common-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "android.hardware.audio.common-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.1",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.2",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.camera.atms@1.0",
     check_elf_files: false,
     owner: "lenovo",
@@ -17436,44 +16939,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower-V1-ndk",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mtkpower_applist-V1-ndk",
     check_elf_files: false,
     owner: "lenovo",
@@ -17951,7 +17416,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libvcodec_oal",
-                "libpowerhalwrap_vendor",
                 "libthha",
                 "liblog",
                 "libutils",
@@ -18035,7 +17499,6 @@ cc_prebuilt_library_shared {
                 "libvcodec_oal",
                 "libh264dec_customize",
                 "liblog",
-                "libpowerhalwrap_vendor",
                 "libthha",
                 "libc",
                 "libm",
@@ -18065,7 +17528,6 @@ cc_prebuilt_library_shared {
                 "libvcodec_oal",
                 "libh264dec_customize",
                 "liblog",
-                "libpowerhalwrap_vendor",
                 "libthha",
                 "libc",
                 "libm",
@@ -18262,7 +17724,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libvcodec_oal",
-                "libpowerhalwrap_vendor",
                 "libthha",
                 "libc++",
                 "libdl",
@@ -18414,7 +17875,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/APUWareUtilsAidlServer.so",
             ],
             shared_libs: [
-                "libion_mtk",
                 "libbase",
                 "libbinder_ndk",
                 "libion",
@@ -18457,7 +17917,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libdrm",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -19372,7 +18831,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libjpeg-alpha_vendor",
                 "libion",
-                "libion_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -20474,7 +19932,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libion",
-                "libion_mtk",
                 "libdmabufheap",
                 "libc++",
                 "libc",
@@ -20556,7 +20013,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libion_mtk",
                 "libion",
                 "libdmabufheap",
                 "libc++",
@@ -20985,7 +20441,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libladder",
                 "libmtkcam_sysutils",
                 "libmtkcam_ulog",
                 "libmtkcam.debugwrapper",
@@ -21314,7 +20769,6 @@ cc_prebuilt_library_shared {
                 "libmtkcutils",
                 "libmtkproperty",
                 "libmtkrillog",
-                "libladder",
                 "libc++",
                 "libc",
                 "libm",
@@ -21391,7 +20845,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "libvpu",
                 "libc++",
@@ -27509,7 +26962,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libneuron_runtime.7",
                 "libion",
-                "libion_mtk",
                 "libcutils",
                 "liblog",
                 "libutils",
@@ -28972,7 +28424,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "libion",
-                "libion_mtk",
                 "libmtkcam.debugwrapper",
                 "libutils",
                 "liblog",
@@ -30394,7 +29845,6 @@ cc_prebuilt_library_shared {
                 "libmtkcam.debugwrapper",
                 "libnativewindow",
                 "libion",
-                "libion_mtk",
                 "libmtkcam_stdutils",
                 "libmtkcam_debugutils",
                 "libmtkcam_sysutils",
@@ -36084,39 +35534,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtkperf_client",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libmtkperf_client.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "libcutils",
-                "libc",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmvpu_cic_ci_compiler.mtk",
     check_elf_files: false,
     owner: "lenovo",
@@ -37349,41 +36766,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libexpat",
                 "liblog",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpowerhalwrap",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libpowerhalwrap.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "libcutils",
-                "libc",
-                "vendor.mediatek.hardware.mtkpower-V3-ndk",
-                "vendor.mediatek.hardware.mtkpower_applist-V3-ndk",
-                "vendor.mediatek.hardware.gpuserv-V2-ndk",
                 "libc++",
                 "libm",
                 "libdl",
@@ -39334,32 +38716,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower-V2-ndk",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mtkpower-V3-ndk",
     check_elf_files: false,
     owner: "lenovo",
@@ -39918,7 +39274,6 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libion",
-                "libion_mtk",
                 "liblog",
                 "libhardware",
                 "libhidlbase",
@@ -40242,14 +39597,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "chipinfo",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/chipinfo",
-    filename: "chipinfo",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "conninfra_loader",
     check_elf_files: false,
@@ -40450,8 +39797,6 @@ cc_prebuilt_binary {
                 "libtinycompress",
                 "libaudiotoolkit_vendor",
                 "libmedia_helper",
-                "libladder",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "libhfmanagerwrapper",
                 "liblog",
                 "libutils",
@@ -40767,56 +40112,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.audio.service.mediatek",
-    check_elf_files: false,
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek",
-            ],
-            shared_libs: [
-                "libaudiofoundation",
-                "libcutils",
-                "libbinder",
-                "libbinder_ndk",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "libhwbinder",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio@7.0",
-                "android.hardware.audio@7.1",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.effect@6.0",
-                "android.hardware.audio.effect@7.0",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "android.hardware.soundtrigger3-V1-ndk",
-                "vendor.mediatek.hardware.audio@6.1",
-                "vendor.mediatek.hardware.audio@7.1",
-                "vendor.mediatek.hardware.audio@8.1",
-                "vendor.mediatek.hardware.audio-impl",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
     soc_specific: true,
 }
 
@@ -41164,39 +40459,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.memtrack-service.mediatek",
-    check_elf_files: false,
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.memtrack-service.mediatek",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "liblog",
-                "libbinder_ndk",
-                "android.hardware.memtrack-V1-ndk",
-                "libhardware",
-                "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.neuralnetworks-shim-service-mtk",
     check_elf_files: false,
     owner: "lenovo",
@@ -41265,39 +40527,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.thermal-service.mediatek",
-    check_elf_files: false,
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.thermal-service.mediatek",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "android.hardware.thermal-V1-ndk",
-                "libc",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libhardware",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.usb-aidl-service.mediatekv1.0",
     check_elf_files: false,
     owner: "lenovo",
@@ -41349,39 +40578,6 @@ cc_prebuilt_binary {
                 "android.frameworks.stats-V1-ndk",
                 "libcutils",
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.vibrator-service.mediatek",
-    check_elf_files: false,
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "liblog",
-                "libbinder_ndk",
-                "android.hardware.vibrator-V2-ndk",
-                "libhardware",
-                "libhardware_legacy",
                 "libc++",
                 "libc",
                 "libm",
@@ -42186,7 +41382,6 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libhidlbase",
                 "libhardware_legacy",
-                "vendor.mediatek.hardware.mtkpower-V1-ndk",
                 "vendor.mediatek.hardware.mtkpower-aidl-impl",
                 "android.hardware.power-service-mediatek",
                 "libbase",
@@ -42581,7 +41776,6 @@ cc_prebuilt_binary {
                 "libz",
                 "liblog",
                 "libhardware",
-                "libladder",
                 "libmipc",
                 "libmtkrillog",
                 "libtrm",
@@ -43453,7 +42647,6 @@ cc_prebuilt_binary {
                 "libvpud_vcodec",
                 "libvcodec_utility",
                 "liblog",
-                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -43513,34 +42706,6 @@ cc_prebuilt_binary {
                 "libwifitest",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "wlan_assistant",
-    check_elf_files: false,
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wlan_assistant",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libcutils",
-                "libnl",
-                "libc++",
                 "libm",
                 "libdl",
             ],
