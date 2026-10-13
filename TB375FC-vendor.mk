@@ -1451,7 +1451,7 @@ PRODUCT_PACKAGES += \
     libimgsys_wpe \
     libmml \
     libmmlpqImpl \
-    libmnl \
+    libmnl_stock \
     libmtk_drvb \
     libmtkcam.atmseventmgr \
     libmtkcam.debugwrapper \

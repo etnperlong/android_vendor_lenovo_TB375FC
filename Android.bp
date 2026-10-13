@@ -14291,8 +14291,9 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl",
+    name: "libmnl_stock",
     check_elf_files: false,
+    stem: "libmnl",
     owner: "lenovo",
     strip: {
         none: true,
@@ -42571,7 +42572,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl",
+                "libmnl_stock",
                 "libcurl",
                 "libcutils",
                 "libnvram",
