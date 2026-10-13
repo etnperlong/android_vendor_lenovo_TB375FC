@@ -115,7 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/log-handler.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/log-handler.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-carrier-config-manager.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-carrier-config-manager.jar \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-carrier-config-manager.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-carrier-config-manager.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-common.jar \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-common.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar.fsv_meta \
