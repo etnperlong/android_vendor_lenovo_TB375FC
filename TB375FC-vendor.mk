@@ -252,6 +252,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6897/ISP_info.db \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/dmabuf_dump:$(TARGET_COPY_OUT_VENDOR)/bin/dmabuf_dump \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
+    vendor/lenovo/TB375FC/proprietary/vendor/bin/gpu_counter_producer:$(TARGET_COPY_OUT_VENDOR)/bin/gpu_counter_producer \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service.mediatek \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.health-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.example \
@@ -882,6 +883,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/audioclient-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/audioclient-types-aidl-cpp.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/av-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/av-types-aidl-cpp.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/egl/libEGL_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_angle.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/egl/libGLESv1_CM_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_angle.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/egl/libGLESv2_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_angle.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/egl/mt6897/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/mt6897/libGLES_mali.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/framework-permission-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/framework-permission-aidl-cpp.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/hw/android.hardware.soundtrigger3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger3-impl.so \
@@ -893,12 +897,17 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libRSCpuRef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSCpuRef.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libRSDriver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriver.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libRS_internal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRS_internal.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libaudio_aidl_conversion_common_ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_aidl_conversion_common_ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libavservices_minijail.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavservices_minijail.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libbcinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbcinfo.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libblas.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblas.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_aidl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libbluetooth_audio_session_aidl_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_aidl_mtk.so \
@@ -911,6 +920,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libcodec2_mtk_venc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_venc.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libcodec2_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_common.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_vndk.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libcompiler_rt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcompiler_rt.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeffectsconfig.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
@@ -924,6 +934,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpcap.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfctl_vendor.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libprotobuf-cpp-full-4.25.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-4.25.8.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib/libprotobuf-cpp-lite-4.25.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-4.25.8.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libruy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libruy.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
@@ -1052,6 +1064,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/android.system.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.wifi.keystore@1.0.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/audioclient-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/audioclient-types-aidl-cpp.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/av-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/av-types-aidl-cpp.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/egl/libEGL_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_angle.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/egl/libGLESv1_CM_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_angle.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/egl/libGLESv2_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_angle.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/egl/mt6897/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/mt6897/libGLES_mali.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/framework-permission-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/framework-permission-aidl-cpp.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/hw/android.hardware.soundtrigger3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger3-impl.so \
@@ -1065,6 +1080,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libRSCpuRef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSCpuRef.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libRSDriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSDriver.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libRS_internal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRS_internal.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/lib_android_keymaster_keymint_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_android_keymaster_keymint_utils.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libaimemc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaimemc.so \
@@ -1073,7 +1091,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioclient_aidl_conversion.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofoundation.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libavservices_minijail.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libavservices_minijail.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libbcinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbcinfo.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libbinderdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderdebug.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libblas.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblas.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_aidl.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libbluetooth_audio_session_aidl_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_aidl_mtk.so \
@@ -1088,6 +1108,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_AIMEMC_plugin.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libcodec2_vpp_AISR_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_AISR_plugin.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libcompiler_rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcompiler_rt.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppbor_external.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libcppcose_rkp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppcose_rkp.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
@@ -1117,6 +1138,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpcap.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfctl_vendor.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
+    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libprotobuf-cpp-full-4.25.8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-4.25.8.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpuresoftkeymasterdevice.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libruy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libruy.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
@@ -2358,33 +2380,3 @@ PRODUCT_PACKAGES += \
     thermald \
     trace \
     vtservice
-
-# Vendor blobs whose basename matches an AOSP source module (ANGLE, RenderScript,
-# versioned protobuf, gpu_counter_producer). A generated cc_prebuilt collides with
-# the AOSP module of the same name, so setup-makefiles emits no install rule and the
-# file is absent from /vendor. libEGL_angle.so is loaded during the zygote GLES
-# preload; without it app_process hits a null EGL dispatch and the device never
-# leaves the boot animation. Ship them as raw copies, matching the stock image.
-PRODUCT_COPY_FILES += \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/egl/libEGL_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_angle.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/egl/libGLESv1_CM_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_angle.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/egl/libGLESv2_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_angle.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/egl/libEGL_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_angle.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/egl/libGLESv1_CM_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_angle.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/egl/libGLESv2_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_angle.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/libRSCpuRef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSCpuRef.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/libRSDriver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriver.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/libRS_internal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRS_internal.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/libbcinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbcinfo.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/libblas.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblas.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/libcompiler_rt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcompiler_rt.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/libprotobuf-cpp-full-4.25.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-4.25.8.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib/libprotobuf-cpp-lite-4.25.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-4.25.8.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libRSCpuRef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSCpuRef.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libRSDriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSDriver.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libRS_internal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRS_internal.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libbcinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbcinfo.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libblas.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblas.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libcompiler_rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcompiler_rt.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/libprotobuf-cpp-full-4.25.8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-4.25.8.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/bin/gpu_counter_producer:$(TARGET_COPY_OUT_VENDOR)/bin/gpu_counter_producer
