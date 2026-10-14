@@ -1,7 +1,10 @@
-# TB375FC vendor blobs - LineageOS 23.2
+# TB375FC vendor blobs - LineageOS 24.0
 
 Proprietary vendor files for the Lenovo Xiaoxin Pad Pro 12.7 (2025), `TB375FC`
-(MediaTek Dimensity 8300 / MT6897), for LineageOS 23.2 (Android 16).
+(MediaTek Dimensity 8300 / MT6897), for LineageOS 24.0 (Android 17).
+
+Vendor updates are sourced from PRC ZUX `1.5.10.103` / P16.
+Existing Lineage adaptations and retained components are preserved.
 
 ## Git LFS
 

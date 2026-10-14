@@ -1,7 +1,7 @@
 <!--
     Input:
         vendor/dolby/ds/service/hidl/dms/2.0/default/dax_framework_compatibility_matrix_hidl.xml
-        device/lenovo/zui_P98300DA1/dolby-config/dolby_vision_compatibility_matrix.xml
+        device/lenovo/zui_P98300DA2/dolby-config/dolby_vision_compatibility_matrix.xml
 -->
 <compatibility-matrix version="9.0" type="framework">
     <hal format="hidl">
