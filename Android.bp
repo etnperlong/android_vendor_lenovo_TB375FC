@@ -3,6 +3,9 @@
 //
 
 soong_namespace {
+    imports: [
+        "hardware/mediatek",
+    ],
 }
 
 cc_prebuilt_library_shared {
@@ -40112,6 +40115,54 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "android.hardware.audio.service.mediatek",
+    check_elf_files: false,
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek",
+            ],
+            shared_libs: [
+                "libaudiofoundation",
+                "libcutils",
+                "libbinder",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libhardware",
+                "libhwbinder",
+                "android.hardware.audio@6.0",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio@7.1",
+                "android.hardware.audio.common@6.0",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.effect@6.0",
+                "android.hardware.audio.effect@7.0",
+                "android.hardware.soundtrigger3-V1-ndk",
+                "vendor.mediatek.hardware.audio@6.1",
+                "vendor.mediatek.hardware.audio@7.1",
+                "vendor.mediatek.hardware.audio@8.1",
+                "vendor.mediatek.hardware.audio-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.biometrics.fingerprint-service",
     check_elf_files: false,
     owner: "lenovo",
@@ -40455,6 +40506,39 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "android.hardware.memtrack-service.mediatek",
+    check_elf_files: false,
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.memtrack-service.mediatek",
+            ],
+            shared_libs: [
+                "libbase",
+                "libutils",
+                "liblog",
+                "libbinder_ndk",
+                "android.hardware.memtrack-V1-ndk",
+                "libhardware",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.neuralnetworks-shim-service-mtk",
     check_elf_files: false,
     owner: "lenovo",
@@ -40523,6 +40607,38 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "android.hardware.thermal-service.mediatek",
+    check_elf_files: false,
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.thermal-service.mediatek",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libc",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.usb-aidl-service.mediatekv1.0",
     check_elf_files: false,
     owner: "lenovo",
@@ -40574,6 +40690,39 @@ cc_prebuilt_binary {
                 "android.frameworks.stats-V1-ndk",
                 "libcutils",
                 "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.vibrator-service.mediatek",
+    check_elf_files: false,
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek",
+            ],
+            shared_libs: [
+                "libbase",
+                "libutils",
+                "liblog",
+                "libbinder_ndk",
+                "android.hardware.vibrator-V2-ndk",
+                "libhardware",
+                "libhardware_legacy",
                 "libc++",
                 "libc",
                 "libm",
@@ -42702,6 +42851,34 @@ cc_prebuilt_binary {
                 "libwifitest",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "wlan_assistant",
+    check_elf_files: false,
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/wlan_assistant",
+            ],
+            shared_libs: [
+                "libc",
+                "liblog",
+                "libcutils",
+                "libnl",
+                "libc++",
                 "libm",
                 "libdl",
             ],
