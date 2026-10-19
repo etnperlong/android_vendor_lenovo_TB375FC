@@ -38162,30 +38162,6 @@ prebuilt_apex {
 }
 
 prebuilt_apex {
-    name: "com.android.compos",
-    owner: "lenovo",
-    src: "proprietary/system_ext/apex/com.android.compos.apex",
-    filename: "com.android.compos.apex",
-    system_ext_specific: true,
-}
-
-prebuilt_apex {
-    name: "com.android.vndk.v31",
-    owner: "lenovo",
-    src: "proprietary/system_ext/apex/com.android.vndk.v31.apex",
-    filename: "com.android.vndk.v31.apex",
-    system_ext_specific: true,
-}
-
-prebuilt_apex {
-    name: "com.android.vndk.v33",
-    owner: "lenovo",
-    src: "proprietary/system_ext/apex/com.android.vndk.v33.apex",
-    filename: "com.android.vndk.v33.apex",
-    system_ext_specific: true,
-}
-
-prebuilt_apex {
     name: "com.android.vndk.v34",
     owner: "lenovo",
     src: "proprietary/system_ext/apex/com.android.vndk.v34.apex",

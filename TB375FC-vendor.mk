@@ -2166,9 +2166,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.touchll@1.0 \
     com.google.android.widevine.nonupdatable \
-    com.android.compos \
-    com.android.vndk.v31 \
-    com.android.vndk.v33 \
     com.android.vndk.v34 \
     NetworkStackGoogleGoResOverlay \
     NetworkStackGoogleResOverlay \
