@@ -33593,38 +33593,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hidl.memory@1.0-impl",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/hw/android.hidl.memory@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "android.hidl.memory@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libJpegOal",
     check_elf_files: false,
     owner: "lenovo",
@@ -42782,38 +42750,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hidl.allocator@1.0-service",
-    check_elf_files: false,
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/hw/android.hidl.allocator@1.0-service",
-            ],
-            shared_libs: [
-                "android.hidl.allocator@1.0",
-                "libhidlbase",
-                "libbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
     system_ext_specific: true,
 }
 
