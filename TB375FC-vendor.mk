@@ -45,8 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/OVSplitscreen/OVSplitBlacklist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/OVSplitscreen/OVSplitBlacklist.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_audio_policy_configuration.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_in_audio_policy_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/aee-commit:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aee-commit \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/aee-config:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aee-config \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_configuration_stub.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_stub.xml \
@@ -60,12 +58,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/custom.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/custom.conf \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default_volume_tables.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hearing_aid_audio_policy_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/aee_aed64.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed64.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/aee_aed64_v2.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed64_v2.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hardware.audio.parameter_parser.service.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/batterywarning.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/batterywarning.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/bootlogoupdater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/bootlogoupdater.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/hw/init.aee.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/init.aee.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/hw/meta_init.system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/meta_init.system.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/hw/vendor_init_as_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/vendor_init_as_system.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/init.thermald.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.thermald.rc \
@@ -2031,7 +2026,6 @@ PRODUCT_PACKAGES += \
     libTeeClient \
     libTeeServiceJni \
     lib_remote_simlock \
-    libaed \
     libapu_mdw_ext.mtk \
     libapuwareapusys.mtk \
     libapuwareapusys_v2.mtk \
@@ -2072,7 +2066,6 @@ PRODUCT_PACKAGES += \
     libmagt \
     libmagtsync \
     libmdloggerrecycle \
-    libmediatek_exceptionlog \
     libmemoryDumpEncoder \
     libmtk_sf_llfp \
     libmtkaudio_utils \
@@ -2163,9 +2156,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.framework.mtksf_ext-V3-ndk \
     vendor.mediatek.framework.mtksf_ext-V4-ndk \
     vendor.mediatek.framework.mtksf_ext-V9-ndk \
-    vendor.mediatek.hardware.aee-V1-ndk \
-    vendor.mediatek.hardware.aee@1.0 \
-    vendor.mediatek.hardware.aee@1.1 \
     vendor.mediatek.hardware.apuware.apusys-V5-ndk \
     vendor.mediatek.hardware.apuware.apusys@1.0 \
     vendor.mediatek.hardware.apuware.apusys@2.0 \
@@ -2326,12 +2316,6 @@ PRODUCT_PACKAGES += \
     wmt_loader \
     wpa_cli \
     AudioSetParam \
-    aee_aed64 \
-    aee_aed64_v2 \
-    aee_core_forwarder_v2 \
-    aee_dumpstate_v2 \
-    aee_v2 \
-    aeedb_v2 \
     batterywarning \
     boot_logo_updater \
     kpoc_charger \
@@ -2341,6 +2325,5 @@ PRODUCT_PACKAGES += \
     mediahelper \
     mtk_plpath_utils \
     omservice \
-    rtt_v2 \
     thermald \
     trace
