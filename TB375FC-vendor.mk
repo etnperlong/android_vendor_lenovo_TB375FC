@@ -119,12 +119,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-extension-plugin.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-services.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-services.jar \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-services.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-services.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-telecom-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telecom-common.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-telecom-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telecom-common.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-telephony-base.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-base.jar \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-telephony-base.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-base.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-common.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-telephony-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-common.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/CustomPropInterface.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/CustomPropInterface.odex.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/CustomPropInterface.vdex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/CustomPropInterface.vdex.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/duraspeed.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/duraspeed.odex.fsv_meta \
