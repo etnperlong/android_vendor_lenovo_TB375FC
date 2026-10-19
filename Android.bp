@@ -33745,81 +33745,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTeeServiceJni",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libTeeServiceJni.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libgui",
-                "libui",
-                "libselinux",
-                "libhidlbase",
-                "libhidlmemory",
-                "libhidltransport",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "vendor.trustonic.tee@1.1",
-                "libbinder_ndk",
-                "vendor.trustonic.tee-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib_remote_simlock",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/lib_remote_simlock.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc",
-                "android.hardware.radio@1.0",
-                "vendor.mediatek.hardware.mtkradioex@3.0",
-                "libhidlbase",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.mtkradioex.sim-V1-ndk",
-                "vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk",
-                "vendor.mediatek.hardware.mtkradioex.se-V1-ndk",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libapu_mdw_ext.mtk",
     check_elf_files: false,
     owner: "lenovo",
@@ -34320,60 +34245,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudiopolicycustomextensions",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libaudiopolicycustomextensions.so",
-            ],
-            shared_libs: [
-                "framework-permission-aidl-cpp",
-                "libaudiofoundation",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libaudioclient",
-                "libhardware_legacy",
-                "libmediautils",
-                "libaudiopolicymanagerdefault",
-                "libaudiousecasevalidation",
-                "libmedia_helper",
-                "libsensorprivacy",
-                "libaudiopolicyengineconfigurable",
-                "libaudiocompensationfilter",
-                "libaudioflinger",
-                "libaudiotoolkit",
-                "libaudioutilmtk",
-                "libaudioutils",
-                "libactivitymanager_aidl",
-                "libheadtracking",
-                "libheadtracking-binding",
-                "packagemanager_aidl-cpp",
-                "spatializer-aidl-cpp",
-                "libaudiopolicycomponents",
-                "libaudioclient_aidl_conversion",
-                "audioclient-types-aidl-cpp",
-                "audiopolicy-types-aidl-cpp",
-                "com.android.media.audio-aconfig-cc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaudiotoolkit",
     check_elf_files: false,
     owner: "lenovo",
@@ -34390,37 +34261,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libaudioclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudioutilmtk",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libaudioutilmtk.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libmediautils",
-                "libbinder",
                 "libc++",
                 "libc",
                 "libm",
@@ -36860,39 +36700,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtouch_ll",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libtouch_ll.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc",
-                "libhidlbase",
-                "libbase",
-                "libbinder",
-                "vendor.mediatek.hardware.touchll@1.0",
-                "libinput",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libtouch_ll_share",
     check_elf_files: false,
     owner: "lenovo",
@@ -38169,41 +37976,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkradioex@3.0",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.4",
-                "android.hardware.radio@1.5",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.neuropilot.neuronservice-V1-ndk",
     check_elf_files: false,
     owner: "lenovo",
@@ -38365,91 +38137,6 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/vendor.mediatek.hardware.touchll@1.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.trustonic.tee-V1-ndk",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.trustonic.tee-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.trustonic.tee@1.0",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.trustonic.tee@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.trustonic.tee@1.1",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.trustonic.tee@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.trustonic.tee@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",

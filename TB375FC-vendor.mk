@@ -123,14 +123,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/mediatek-ims-extension-plugin.vdex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/mediatek-ims-extension-plugin.vdex.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/mediatek-services.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/mediatek-services.odex.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/mediatek-services.vdex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/mediatek-services.vdex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/android.hardware.radio.config@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/android.hardware.radio.config@1.1.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/android.hardware.radio.config@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/android.hardware.radio.config@1.2.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/android.hardware.radio.config@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/android.hardware.radio.config@1.3.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/android.hardware.radio@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/android.hardware.radio@1.5.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/android.hardware.radio@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/android.hardware.radio@1.6.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomposer_ext.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libfuse-lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfuse-lite.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libgpud_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libgpud_sys.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtkperf_client.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libneuron_graph_delegate.mtk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libntfs-3g.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libntfs-3g.so \
@@ -155,9 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.1.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.2.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/usp/usp-content-OP00.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP00.txt \
@@ -2024,8 +2015,6 @@ PRODUCT_PACKAGES += \
     libPQDCjni \
     libPQjni \
     libTeeClient \
-    libTeeServiceJni \
-    lib_remote_simlock \
     libapu_mdw_ext.mtk \
     libapuwareapusys.mtk \
     libapuwareapusys_v2.mtk \
@@ -2041,9 +2030,7 @@ PRODUCT_PACKAGES += \
     libaudiocompensationfilter \
     libaudiocomponentengine \
     libaudiopolicyconfigxml_mtk \
-    libaudiopolicycustomextensions \
     libaudiotoolkit \
-    libaudioutilmtk \
     libbessound_hd_mtk \
     libblisrc \
     libccci_util_sys \
@@ -2127,7 +2114,6 @@ PRODUCT_PACKAGES += \
     libteeservice_client.trustonic \
     libtflite_mtk.mtk \
     libthroughputmode \
-    libtouch_ll \
     libtouch_ll_share \
     libui_ext \
     libvoicerecognition \
@@ -2173,16 +2159,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq-V4-ndk \
     vendor.mediatek.hardware.mtkpower-V3-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.neuropilot.neuronservice-V1-ndk \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
     vendor.mediatek.hardware.pq@2.2 \
     vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.touchll@1.0 \
-    vendor.trustonic.tee-V1-ndk \
-    vendor.trustonic.tee@1.0 \
-    vendor.trustonic.tee@1.1 \
     com.google.android.widevine.nonupdatable \
     com.android.compos \
     com.android.vndk.v31 \
