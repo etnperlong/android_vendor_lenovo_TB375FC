@@ -70,7 +70,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/hw/meta_init.system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/meta_init.system.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/hw/vendor_init_as_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/vendor_init_as_system.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/init.thermald.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.thermald.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/kpoc_charger.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/loghidlsysservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/loghidlsysservice.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/magt.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/magt.rc \
@@ -143,7 +142,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libneuron_graph_delegate.mtk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libntfs-3g.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libntfs-3g.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libpowerhalwrap.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpowerhalwrap.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsink.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libtflite_mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libtflite_mtk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libudf.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libudf.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so \
@@ -2060,7 +2058,6 @@ PRODUCT_PACKAGES += \
     libccci_util_sys \
     libcmdl_ndk.mtk \
     libcompress \
-    libcomutils \
     libcustom_jni \
     libcustom_prop \
     libdcnio_jni \
@@ -2072,10 +2069,6 @@ PRODUCT_PACKAGES += \
     libgralloc_extra_sys \
     libgui_debug \
     libhdcp_helper \
-    libimsma \
-    libimsma_adapt \
-    libimsma_rtp \
-    libimsma_socketwrapper \
     libjni_pq \
     libjpeg-alpha-oal \
     libjpeg-alpha \
@@ -2085,8 +2078,6 @@ PRODUCT_PACKAGES += \
     libmediatek_exceptionlog \
     libmemoryDumpEncoder \
     libmtk_sf_llfp \
-    libmtk_vt_service \
-    libmtk_vt_wrapper \
     libmtkaudio_utils \
     libmvpu_cic_ci_compiler.mtk \
     libmvpu_cic_ci_compiler_25.mtk \
@@ -2139,9 +2130,7 @@ PRODUCT_PACKAGES += \
     libsf_perf \
     libsfpq_inf \
     libshowlogo \
-    libsignal \
     libsmartpower_jni \
-    libsource \
     libstagefright_mbrain \
     libstagefright_wfd_mtk \
     libsysenv_system \
@@ -2151,8 +2140,6 @@ PRODUCT_PACKAGES += \
     libtouch_ll \
     libtouch_ll_share \
     libui_ext \
-    libvcodec_cap \
-    libvcodec_capenc \
     libvoicerecognition \
     libvoicerecognition_jni \
     libvow_ap_train_dddd \
@@ -2176,7 +2163,6 @@ PRODUCT_PACKAGES += \
     libvow_comp_train \
     libvsim-adaptor-client \
     libvsync_hint \
-    libvt_avsync \
     vendor.mediatek.framework.mtksf_ext-V3-ndk \
     vendor.mediatek.framework.mtksf_ext-V4-ndk \
     vendor.mediatek.framework.mtksf_ext-V9-ndk \
@@ -2207,8 +2193,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.2 \
     vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.touchll@1.0 \
-    vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.trustonic.tee-V1-ndk \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
@@ -2363,5 +2347,4 @@ PRODUCT_PACKAGES += \
     omservice \
     rtt_v2 \
     thermald \
-    trace \
-    vtservice
+    trace
