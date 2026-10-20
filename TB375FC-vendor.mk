@@ -13,27 +13,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/odm/etc/vintf/manifest_tsts.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_tsts.xml \
     vendor/lenovo/TB375FC/proprietary/product/etc/init/init.motodestktop.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.motodestktop.rc \
     vendor/lenovo/TB375FC/proprietary/product/etc/security/fsverity/play_store_fsi_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/play_store_fsi_cert.der \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/pen_mono.wav:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/pen_mono.wav \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/pen_sound.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/pen_sound.ogg \
     vendor/lenovo/TB375FC/proprietary/system_ext/bin/fsck.ntfs:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/fsck.ntfs \
     vendor/lenovo/TB375FC/proprietary/system_ext/bin/hw/android.hardware.audio.parameter_parser.service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/hw/android.hardware.audio.parameter_parser.service \
     vendor/lenovo/TB375FC/proprietary/system_ext/bin/mount.ntfs:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/mount.ntfs \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/OVSplitscreen/OVRelaunchBlacklist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/OVSplitscreen/OVRelaunchBlacklist.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/OVSplitscreen/OVSplitBlacklist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/OVSplitscreen/OVSplitBlacklist.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_in_audio_policy_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_configuration_stub.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_stub.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_stream_volumes.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_volumes.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth_audio_policy_configuration.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/custom.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/custom.conf \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default_volume_tables.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hearing_aid_audio_policy_configuration.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hardware.audio.parameter_parser.service.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/batterywarning.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/batterywarning.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/hw/vendor_init_as_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/vendor_init_as_system.rc \
@@ -43,12 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/mtk_usermodehelper.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mtk_usermodehelper.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/omservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/omservice.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/rkp.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/rkp.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/mtklog-config.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/mtklog-config.prop \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/nr-city.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nr-city.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/spn-conf.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/usb_audio_policy_configuration.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-common.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar.fsv_meta \
@@ -62,8 +40,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.2.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/usp/usp-content-OP00.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-content-OP00.txt \
-    vendor/lenovo/TB375FC/proprietary/system_ext/usp/usp-info.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/usp/usp-info.txt \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/awk:$(TARGET_COPY_OUT_VENDOR)/bin/awk \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/boringssl_self_test32:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test32 \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
