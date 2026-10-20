@@ -15,27 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/product/etc/permissions/product-permissions-mediatek.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/product-permissions-mediatek.xml \
     vendor/lenovo/TB375FC/proprietary/product/etc/security/fsverity/play_store_fsi_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/play_store_fsi_cert.der \
     vendor/lenovo/TB375FC/proprietary/product/etc/sysconfig/d2d_cable_migration_feature.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/d2d_cable_migration_feature.xml \
-    vendor/lenovo/TB375FC/proprietary/product/etc/sysconfig/initial-package-stopped-states-aosp.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/initial-package-stopped-states-aosp.xml \
-    vendor/lenovo/TB375FC/proprietary/product/etc/sysconfig/preinstalled-packages-platform-handheld-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-handheld-product.xml \
-    vendor/lenovo/TB375FC/proprietary/product/etc/sysconfig/preinstalled-packages-platform-overlays.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-overlays.xml \
-    vendor/lenovo/TB375FC/proprietary/product/etc/sysconfig/preinstalled-packages-platform-telephony-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-telephony-product.xml \
-    vendor/lenovo/TB375FC/proprietary/product/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/vintf/compatibility_matrix.xml \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/ChargingStarted.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/ChargingStarted.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/Dock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Dock.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/Effect_Tick.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/KeypressDelete.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressDelete.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/KeypressInvalid.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressInvalid.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/KeypressReturn.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressReturn.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/KeypressSpacebar.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressSpacebar.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/KeypressStandard.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressStandard.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/Lock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Lock.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/LowBattery.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/LowBattery.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/Undock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Undock.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/Unlock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Unlock.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/VideoRecord.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/VideoRecord.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/VideoStop.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/VideoStop.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/camera_click.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/camera_click.ogg \
-    vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/camera_focus.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/camera_focus.ogg \
     vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/pen_mono.wav:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/pen_mono.wav \
     vendor/lenovo/TB375FC/proprietary/product/media/audio/ui/pen_sound.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/pen_sound.ogg \
     vendor/lenovo/TB375FC/proprietary/system_ext/bin/fsck.ntfs:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/fsck.ntfs \
@@ -54,7 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_volumes.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/build_flags.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/build_flags.json \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/custom.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/custom.conf \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default_volume_tables.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hearing_aid_audio_policy_configuration.xml \
@@ -76,21 +54,13 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/motorola/bgintents/com.android.systemui.bgintents.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/motorola/bgintents/com.android.systemui.bgintents.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/mtklog-config.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/mtklog-config.prop \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/nr-city.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nr-city.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/appfunctions.extension.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/appfunctions.extension.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/com.android.carrierconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.carrierconfig.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/com.android.emergency.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.emergency.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/com.android.extensions.appfunctions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.extensions.appfunctions.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/com.android.systemui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.systemui.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/privapp-permissions-com.android.systemui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.android.systemui.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/system-ext-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/system-ext-permissions-mediatek.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/r_submix_audio_policy_configuration.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/spn-conf.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/sysconfig/android.telephony.satellite.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/android.telephony.satellite.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/sysconfig/com.android.phone.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.android.phone.config.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/usb_audio_policy_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/vintf/manifest/mtk-mbrainj-default.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest/mtk-mbrainj-default.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/CustomPropInterface.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/CustomPropInterface.jar \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/CustomPropInterface.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/CustomPropInterface.jar.fsv_meta \
