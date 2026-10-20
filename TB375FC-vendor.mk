@@ -36,15 +36,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hearing_aid_audio_policy_configuration.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hardware.audio.parameter_parser.service.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/batterywarning.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/batterywarning.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/bootlogoupdater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/bootlogoupdater.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/hw/meta_init.system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/meta_init.system.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/hw/vendor_init_as_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/vendor_init_as_system.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/init.thermald.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.thermald.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/kpoc_charger.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/loghidlsysservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/loghidlsysservice.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/magt.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/magt.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/mdlogger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mdlogger.rc \
-    vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/mediaserver_dynamic.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mediaserver_dynamic.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/mtk-plpath-utils.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mtk-plpath-utils.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/mtk_usermodehelper.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/mtk_usermodehelper.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/omservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/omservice.rc \
@@ -2259,13 +2253,7 @@ PRODUCT_PACKAGES += \
     wpa_cli \
     AudioSetParam \
     batterywarning \
-    boot_logo_updater \
     kpoc_charger \
-    loghidlsysservice \
-    magt \
-    mdlogger \
-    mediahelper \
     mtk_plpath_utils \
     omservice \
-    thermald \
-    trace
+    thermald
