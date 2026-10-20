@@ -49,37 +49,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/r_submix_audio_policy_configuration.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/spn-conf.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/usb_audio_policy_configuration.xml \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/CustomPropInterface.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/CustomPropInterface.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/CustomPropInterface.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/CustomPropInterface.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/duraspeed.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/duraspeed.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/duraspeed.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/duraspeed.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/log-handler.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/log-handler.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/log-handler.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/log-handler.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-carrier-config-manager.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-carrier-config-manager.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-carrier-config-manager.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-carrier-config-manager.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-common.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-ims-base.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-base.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-ims-base.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-base.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-ims-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-common.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-ims-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-common.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-extension-plugin.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-ims-extension-plugin.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-services.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-services.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-services.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-services.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-telephony-base.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-base.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-telephony-base.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-telephony-base.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/CustomPropInterface.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/CustomPropInterface.odex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/CustomPropInterface.vdex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/CustomPropInterface.vdex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/duraspeed.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/duraspeed.odex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/duraspeed.vdex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/duraspeed.vdex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/log-handler.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/log-handler.odex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/log-handler.vdex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/log-handler.vdex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/mediatek-ims-extension-plugin.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/mediatek-ims-extension-plugin.odex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/mediatek-ims-extension-plugin.vdex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/mediatek-ims-extension-plugin.vdex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/mediatek-services.odex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/mediatek-services.odex.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/oat/arm64/mediatek-services.vdex.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/oat/arm64/mediatek-services.vdex.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomposer_ext.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libfuse-lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfuse-lite.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtkperf_client.so \
