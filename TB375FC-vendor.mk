@@ -52,28 +52,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-common.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomposer_ext.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libfuse-lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfuse-lite.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtkperf_client.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libneuron_graph_delegate.mtk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libntfs-3g.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libntfs-3g.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libpowerhalwrap.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpowerhalwrap.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libtflite_mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libtflite_mtk.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libudf.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libudf.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.audio-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.audio-V1-ndk.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.audio@7.1.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.audio@8.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.audio@8.1.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.camera.atms-V1-ndk.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.camera.atms@1.0.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.composer_ext@1.0.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.lbs@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.lbs@1.0.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mms@1.0.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mms@1.1.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mms@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mms@1.2.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mms@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mms@1.3.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.1.so \
@@ -1938,162 +1920,30 @@ PRODUCT_PACKAGES += \
     vendor.microtrust.hardware.ifaa-V1-ndk \
     vendor.microtrust.hardware.soter-V1-ndk \
     vendor.microtrust.hardware.thh@2.0 \
-    libmtkflacextractor \
-    libJpegOal \
     libMiraVision_jni \
     libPQDCjni \
     libPQjni \
-    libTeeClient \
-    libapu_mdw_ext.mtk \
-    libapuwareapusys.mtk \
-    libapuwareapusys_v2.mtk \
-    libapuwarehmp.mtk \
-    libapuwareutils.mtk \
-    libapuwareutils_v2.mtk \
-    libapuwarexrp.mtk \
-    libapuwarexrp_v2.mtk \
-    libarmnn_ndk.mtk \
-    libaudio_param_parser-sys \
-    libaudio_param_parser-sys@8.1 \
-    libaudio_param_parser-sys@aidl \
-    libaudiocompensationfilter \
-    libaudiocomponentengine \
-    libaudiopolicyconfigxml_mtk \
-    libaudiotoolkit \
-    libbessound_hd_mtk \
-    libblisrc \
-    libccci_util_sys \
-    libcmdl_ndk.mtk \
     libcompress \
     libcustom_jni \
     libcustom_prop \
-    libdcnio_jni \
-    libdisp_dejitter \
-    libdrmmtkutil \
-    libdrmmtkwhitelist \
-    libged_kpi \
     libged_sys \
-    libgralloc_extra_sys \
-    libgui_debug \
-    libhdcp_helper \
     libjni_pq \
-    libjpeg-alpha-oal \
-    libjpeg-alpha \
     libmagt \
     libmagtsync \
-    libmdloggerrecycle \
-    libmemoryDumpEncoder \
-    libmtk_sf_llfp \
-    libmtkaudio_utils \
-    libmvpu_cic_ci_compiler.mtk \
-    libmvpu_cic_ci_compiler_25.mtk \
-    libmvpu_cic_ci_compiler_30.mtk \
-    libmvpu_clc_14_mvpu_debuginfo_25.mtk \
-    libmvpu_clc_14_mvpu_elf_25.mtk \
-    libmvpu_clc_14_mvpu_utility_25.mtk \
-    libmvpu_clc_30_mvpu_debuginfo.mtk \
-    libmvpu_clc_30_mvpu_elf.mtk \
-    libmvpu_clc_30_mvpu_utility.mtk \
-    libmvpu_clc_mvpu_debuginfo.mtk \
-    libmvpu_clc_mvpu_elf.mtk \
-    libmvpu_clc_mvpu_utility.mtk \
-    libmvpu_config.mtk \
-    libmvpu_engine.mtk \
-    libmvpu_engine_25.mtk \
-    libmvpu_engine_25_pub.mtk \
-    libmvpu_engine_30.mtk \
-    libmvpu_engine_pub.mtk \
-    libmvpu_pattern.mtk \
-    libmvpu_pattern_25.mtk \
-    libmvpu_pattern_25_pub.mtk \
-    libmvpu_pattern_30.mtk \
-    libmvpu_pattern_pub.mtk \
-    libmvpu_runtime.mtk \
-    libmvpu_runtime_25.mtk \
-    libmvpu_runtime_25_pub.mtk \
-    libmvpu_runtime_30.mtk \
-    libmvpu_runtime_builtin.mtk \
-    libmvpu_runtime_builtin_25.mtk \
-    libmvpu_runtime_pub.mtk \
-    libmvpuop25_mtk_cv.mtk \
-    libmvpuop25_mtk_nn.mtk \
-    libmvpuop30_mtk_nn.mtk \
-    libmvpuop_mtk_cv.mtk \
-    libmvpuop_mtk_nn.mtk \
     libnativecheck-jni \
-    libneuron_sys_util.mtk \
-    libneuronservice_adapter.mtk \
-    libneuronusdk_adapter.9.mtk \
-    libneuronusdk_adapter.mtk \
-    libnir_neon_driver_ndk.mtk \
     libovbundle \
-    libpcap_bak \
     libperfctl \
     libpowerhalwrap_jni \
     libsbectl \
-    libsf_cpupolicy \
-    libsf_debug \
-    libsf_perf \
-    libsfpq_inf \
     libshowlogo \
-    libsmartpower_jni \
-    libstagefright_mbrain \
-    libstagefright_wfd_mtk \
-    libsysenv_system \
-    libteeservice_client.trustonic \
-    libtflite_mtk.mtk \
-    libthroughputmode \
-    libtouch_ll_share \
-    libui_ext \
-    libvoicerecognition \
-    libvoicerecognition_jni \
-    libvow_ap_train_dddd \
-    libvow_ap_train_hhaa \
-    libvow_ap_train_hhha \
-    libvow_ap_train_hhhh \
-    libvow_ap_train_nnnn \
-    libvow_ap_train_trip_dddd \
-    libvow_ap_train_trip_hhaa \
-    libvow_ap_train_trip_hhha \
-    libvow_ap_train_trip_hhhh \
-    libvow_ap_train_trip_nnnn \
-    libvow_ap_train_trip_znnn \
-    libvow_ap_train_vaca_dddd \
-    libvow_ap_train_vaca_hhaa \
-    libvow_ap_train_vaca_hhha \
-    libvow_ap_train_vaca_hhhh \
-    libvow_ap_train_vaca_nnnn \
-    libvow_ap_train_vaca_znnn \
-    libvow_ap_train_znnn \
-    libvow_comp_train \
-    libvsim-adaptor-client \
-    libvsync_hint \
-    vendor.mediatek.framework.mtksf_ext-V3-ndk \
     vendor.mediatek.framework.mtksf_ext-V4-ndk \
-    vendor.mediatek.framework.mtksf_ext-V9-ndk \
-    vendor.mediatek.hardware.apuware.apusys-V5-ndk \
-    vendor.mediatek.hardware.apuware.apusys@1.0 \
-    vendor.mediatek.hardware.apuware.apusys@2.0 \
-    vendor.mediatek.hardware.apuware.apusys@2.1 \
-    vendor.mediatek.hardware.apuware.hmp@1.0 \
-    vendor.mediatek.hardware.apuware.utils@1.0 \
-    vendor.mediatek.hardware.apuware.xrp-V1-ndk \
-    vendor.mediatek.hardware.apuware.xrp@1.0 \
-    vendor.mediatek.hardware.apuware.xrp@2.0 \
     vendor.mediatek.hardware.gpuserv-V2-ndk \
-    vendor.mediatek.hardware.graphics-V1-ndk \
-    vendor.mediatek.hardware.log-V1-ndk \
-    vendor.mediatek.hardware.log@1.0 \
-    vendor.mediatek.hardware.mbrain-V2-ndk \
-    vendor.mediatek.hardware.mmlpq-V4-ndk \
     vendor.mediatek.hardware.mtkpower-V3-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
-    vendor.mediatek.hardware.neuropilot.neuronservice-V1-ndk \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
     vendor.mediatek.hardware.pq@2.2 \
     vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.touchll@1.0 \
     com.google.android.widevine.nonupdatable \
     com.android.vndk.v34 \
     NetworkStackGoogleGoResOverlay \
