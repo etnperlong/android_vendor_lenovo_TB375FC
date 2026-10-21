@@ -30,6 +30,13 @@ supplicant init script is not shipped: it starts the daemon as root to `setuid`
 to `wifi`, which Android 17 SELinux denies. The device tree provides an rc that
 starts it as `wifi`.
 
+## MiraVision
+
+MediaTek's MiraVision app, `mediatek-framework.jar` and the system_ext picture
+quality JNI and client libraries are not shipped. Stock does not expose
+MiraVision, its JNI libraries cannot load on Android 17, and nothing else uses
+them. The vendor picture quality HAL is unchanged.
+
 ## Git LFS
 
 One blob exceeds GitHub's 100 MB per-file limit and is stored with Git LFS:

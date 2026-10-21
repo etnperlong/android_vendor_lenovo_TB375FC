@@ -28,8 +28,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/init/rkp.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/rkp.rc \
     vendor/lenovo/TB375FC/proprietary/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-common.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-common.jar.fsv_meta \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar \
-    vendor/lenovo/TB375FC/proprietary/system_ext/framework/mediatek-framework.jar.fsv_meta:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/mediatek-framework.jar.fsv_meta \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libfuse-lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfuse-lite.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtkperf_client.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/libntfs-3g.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libntfs-3g.so \
@@ -38,8 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.1.so \
     vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.2.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so \
-    vendor/lenovo/TB375FC/proprietary/system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/awk:$(TARGET_COPY_OUT_VENDOR)/bin/awk \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/boringssl_self_test32:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test32 \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
@@ -1887,30 +1883,19 @@ PRODUCT_PACKAGES += \
     vendor.microtrust.hardware.ifaa-V1-ndk \
     vendor.microtrust.hardware.soter-V1-ndk \
     vendor.microtrust.hardware.thh@2.0 \
-    libMiraVision_jni \
-    libPQDCjni \
-    libPQjni \
     libcompress \
-    libcustom_jni \
-    libcustom_prop \
     libged_sys \
-    libjni_pq \
     libmagt \
     libmagtsync \
     libnativecheck-jni \
     libovbundle \
     libperfctl \
-    libpowerhalwrap_jni \
     libsbectl \
     libshowlogo \
     vendor.mediatek.framework.mtksf_ext-V4-ndk \
     vendor.mediatek.hardware.gpuserv-V2-ndk \
     vendor.mediatek.hardware.mtkpower-V3-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
     com.google.android.widevine.nonupdatable \
     com.android.vndk.v34 \
     NetworkStackGoogleGoResOverlay \
@@ -1920,7 +1905,6 @@ PRODUCT_PACKAGES += \
     TetheringResOverlay \
     GpuGameDriver.mt6897 \
     DolbyVisionService \
-    MiraVision \
     daxService \
     AgentTest \
     atcid \

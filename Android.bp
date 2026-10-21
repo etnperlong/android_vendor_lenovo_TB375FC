@@ -33467,103 +33467,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libMiraVision_jni",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libMiraVision_jni.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libhidlbase",
-                "vendor.mediatek.hardware.pq@2.3",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.pq_aidl-V7-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libPQDCjni",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libPQDCjni.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libhidlmemory",
-                "vendor.mediatek.hardware.pq@2.0",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.pq_aidl-V7-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libPQjni",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libPQjni.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "vendor.mediatek.hardware.pq@2.0",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.pq_aidl-V7-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcompress",
     check_elf_files: false,
     owner: "lenovo",
@@ -33597,64 +33500,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcustom_jni",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libcustom_jni.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libnativehelper",
-                "libcustom_prop",
-                "libandroid_runtime",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcustom_prop",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libcustom_prop.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libnativehelper",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libged_sys",
     check_elf_files: false,
     owner: "lenovo",
@@ -33672,38 +33517,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "libnativewindow",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjni_pq",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libjni_pq.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "vendor.mediatek.hardware.pq@2.3",
-                "vendor.mediatek.hardware.pq_aidl-V2-ndk",
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -33869,37 +33682,6 @@ cc_prebuilt_library_shared {
                 "libexpat",
                 "liblog",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpowerhalwrap_jni",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libpowerhalwrap_jni.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libhidlbase",
-                "vendor.mediatek.hardware.pq@2.3",
-                "libcutils",
-                "libnativehelper",
-                "liblog",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -34080,128 +33862,6 @@ cc_prebuilt_library_shared {
     system_ext_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.0",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.1",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.pq@2.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.2",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.pq@2.0",
-                "vendor.mediatek.hardware.pq@2.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.3",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.pq@2.0",
-                "vendor.mediatek.hardware.pq@2.1",
-                "vendor.mediatek.hardware.pq@2.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
 prebuilt_apex {
     name: "com.google.android.widevine.nonupdatable",
     owner: "lenovo",
@@ -34289,17 +33949,6 @@ android_app_import {
     name: "DolbyVisionService",
     owner: "lenovo",
     apk: "proprietary/system_ext/app/DolbyVisionService/DolbyVisionService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MiraVision",
-    owner: "lenovo",
-    apk: "proprietary/system_ext/app/MiraVision/MiraVision.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
