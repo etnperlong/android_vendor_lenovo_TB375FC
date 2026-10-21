@@ -11131,51 +11131,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdrmclearkeyplugin",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "liblog",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "liblog",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "mediadrm",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmockdrmcryptoplugin",
     check_elf_files: false,
     owner: "lenovo",

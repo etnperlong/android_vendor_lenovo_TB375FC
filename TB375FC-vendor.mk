@@ -110,7 +110,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/dmabuf_dump:$(TARGET_COPY_OUT_VENDOR)/bin/dmabuf_dump \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/gpu_counter_producer:$(TARGET_COPY_OUT_VENDOR)/bin/gpu_counter_producer \
-    vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.health-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.example \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.beanpod:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@3.0-service.beanpod \
     vendor/lenovo/TB375FC/proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors-service.multihal \
@@ -315,7 +314,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/android.hardware.bluetooth-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth-service-mediatek.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/android.hardware.boot-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.mtk.rc \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.beanpod.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
@@ -585,7 +583,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/CommandService.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/CommandService.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/android.hardware.bluetooth-service-mediatek.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.bluetooth-service-mediatek.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/android.hardware.boot-service.mtk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.boot-service.mtk.xml \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/android.hardware.health-service.example.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health-service.example.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml \
@@ -1288,7 +1285,6 @@ PRODUCT_PACKAGES += \
     libwapi \
     libwpa_client \
     libclearkeycasplugin \
-    libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
     arm.graphics-V4-ndk \
     arm.mali.platform-V2-ndk \
