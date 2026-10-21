@@ -15,7 +15,11 @@ the extraction fixup also removes the old META init import.
 The `.103` Widevine APEX, OEMCrypto, TEE libraries and trusted-app files remain
 unchanged. Their extraction integrity has been checked against the local stock
 dump; Android 17 linkage, provisioning, L1 and playback still require a build
-and device validation. CAS is separate and retains its existing configuration.
+and device validation.
+
+The stock ClearKey CAS plugin and the `libprotobuf-cpp-{full,lite}-21.7` copies
+it needed are no longer shipped. Android 17 does not build that protobuf
+version; `base_vendor.mk` installs the AOSP CAS plugin instead.
 
 Regenerate active makefiles from `device/lenovo/TB375FC/extract-files.py -m`.
 

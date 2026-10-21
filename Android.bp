@@ -11082,55 +11082,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libclearkeycasplugin",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mediacas/libclearkeycasplugin.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-full-21.7",
-                "libutils",
-                "liblog",
-                "libcrypto",
-                "libstagefright_foundation",
-                "libprotobuf-cpp-lite-21.7",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-full-21.7",
-                "libutils",
-                "liblog",
-                "libcrypto",
-                "libstagefright_foundation",
-                "libprotobuf-cpp-lite-21.7",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "mediacas",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmockdrmcryptoplugin",
     check_elf_files: false,
     owner: "lenovo",

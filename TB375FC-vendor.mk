@@ -1284,7 +1284,6 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libwapi \
     libwpa_client \
-    libclearkeycasplugin \
     libmockdrmcryptoplugin \
     arm.graphics-V4-ndk \
     arm.mali.platform-V2-ndk \
