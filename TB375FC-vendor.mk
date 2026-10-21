@@ -408,9 +408,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.lenovo.hardware.battery-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.battery-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.lenovo.hardware.display-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.display-service.rc \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.lenovo.hardware.factory-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.factory-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.lenovo.hardware.hyperschedule-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.hyperschedule-service.rc \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.lenovo.hardware.keyboard-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.keyboard-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.lenovo.hardware.misc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.misc-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.lenovo.hardware.performance-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.performance-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.lenovo.hardware.touchscreen-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.touchscreen-service.rc \
@@ -421,7 +419,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.mediatek.hardware.tinno_keyboard@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.tinno_keyboard@1.0-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.microtrust.hardware.ifaa-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.ifaa-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc \
