@@ -9047,7 +9047,6 @@ cc_prebuilt_library_shared {
                 "libtinyxml2",
                 "libhidlbase",
                 "libhardware",
-                "vendor.mediatek.hardware.netdagent@1.0",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
                 "libpower_timer",
                 "libged",
@@ -9076,7 +9075,6 @@ cc_prebuilt_library_shared {
                 "libtinyxml2",
                 "libhidlbase",
                 "libhardware",
-                "vendor.mediatek.hardware.netdagent@1.0",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
                 "libpower_timer",
                 "libged",
@@ -16922,50 +16920,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.netdagent@1.0",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.neuropilot.agent-V1-ndk",
     check_elf_files: false,
     owner: "lenovo",
@@ -20217,7 +20171,6 @@ cc_prebuilt_library_shared {
                 "libmtkrillog",
                 "libmtkconfigutils",
                 "libmtktinyxml",
-                "vendor.mediatek.hardware.netdagent@1.0",
                 "libhidlbase",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
                 "libbinder_ndk",
@@ -20557,7 +20510,6 @@ cc_prebuilt_library_shared {
                 "libmtkrillog",
                 "libmtkconfigutils",
                 "libmtktinyxml",
-                "vendor.mediatek.hardware.netdagent@1.0",
                 "libhidlbase",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
                 "libbinder_ndk",
@@ -32565,35 +32517,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.lbs@1.0",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mmagent@1.0",
     check_elf_files: false,
     owner: "lenovo",
@@ -36586,7 +36509,6 @@ cc_prebuilt_binary {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.mediatek.hardware.lbs@1.0",
                 "vendor.mediatek.hardware.nvram-V1-ndk",
                 "libbinder_ndk",
                 "libkmsetkey",
