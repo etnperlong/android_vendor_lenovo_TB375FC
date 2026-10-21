@@ -23,6 +23,13 @@ version; `base_vendor.mk` installs the AOSP CAS plugin instead.
 
 Regenerate active makefiles from `device/lenovo/TB375FC/extract-files.py -m`.
 
+## Wi-Fi
+
+The stock `wpa_supplicant` and `hostapd` binaries ship unchanged. The stock
+supplicant init script is not shipped: it starts the daemon as root to `setuid`
+to `wifi`, which Android 17 SELinux denies. The device tree provides an rc that
+starts it as `wifi`.
+
 ## Git LFS
 
 One blob exceeds GitHub's 100 MB per-file limit and is stored with Git LFS:
