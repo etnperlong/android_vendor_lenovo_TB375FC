@@ -331,7 +331,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/dcxo_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcxo_nvram_init.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/dvs-hidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dvs-hidl-service.rc \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/init/dynamicdata.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dynamicdata.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/eara-io-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eara-io-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/factorybsp_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/factorybsp_service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/factorybsp_service_mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/factorybsp_service_mtk.rc \
