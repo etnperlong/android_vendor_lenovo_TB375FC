@@ -33776,42 +33776,9 @@ prebuilt_apex {
 }
 
 android_app_import {
-    name: "NetworkStackGoogleGoResOverlay",
-    owner: "lenovo",
-    apk: "proprietary/vendor/app/NetworkStackGoogleGoResOverlay/NetworkStackGoogleGoResOverlay.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "NetworkStackGoogleResOverlay",
-    owner: "lenovo",
-    apk: "proprietary/vendor/app/NetworkStackGoogleResOverlay/NetworkStackGoogleResOverlay.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    soc_specific: true,
-}
-
-android_app_import {
     name: "NetworkStackResOverlay",
     owner: "lenovo",
     apk: "proprietary/vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "TetheringGoogleResOverlay",
-    owner: "lenovo",
-    apk: "proprietary/vendor/app/TetheringGoogleResOverlay/TetheringGoogleResOverlay.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -37832,18 +37799,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "WifiSystemResMainlineOverlay",
-    owner: "lenovo",
-    apk: "proprietary/product/overlay/WifiSystemResMainlineOverlay/WifiSystemResMainlineOverlay.apk",
-    presigned: true,
-    preprocessed: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    product_specific: true,
-}
-
-android_app_import {
     name: "WifiSystemResOverlay",
     owner: "lenovo",
     apk: "proprietary/product/overlay/WifiSystemResOverlay/WifiSystemResOverlay.apk",
@@ -37853,30 +37808,6 @@ android_app_import {
         enabled: false,
     },
     product_specific: true,
-}
-
-android_app_import {
-    name: "WifiResGoogleOverlay",
-    owner: "lenovo",
-    apk: "proprietary/vendor/overlay/WifiResGoogleOverlay/WifiResGoogleOverlay.apk",
-    presigned: true,
-    preprocessed: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    vendor: true,
-}
-
-android_app_import {
-    name: "WifiResMainlineOverlay",
-    owner: "lenovo",
-    apk: "proprietary/vendor/overlay/WifiResMainlineOverlay/WifiResMainlineOverlay.apk",
-    presigned: true,
-    preprocessed: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    vendor: true,
 }
 
 android_app_import {

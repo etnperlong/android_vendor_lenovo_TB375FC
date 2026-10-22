@@ -1896,10 +1896,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
     com.google.android.widevine.nonupdatable \
     com.android.vndk.v34 \
-    NetworkStackGoogleGoResOverlay \
-    NetworkStackGoogleResOverlay \
     NetworkStackResOverlay \
-    TetheringGoogleResOverlay \
     TetheringResOverlay \
     GpuGameDriver.mt6897 \
     DolbyVisionService \

@@ -11,8 +11,5 @@ PRODUCT_PACKAGES += \
     FontNotoSerifSourceOverlay \
     NavigationBarMode3ButtonOverlay \
     NavigationBarModeGesturalOverlay \
-    WifiSystemResMainlineOverlay \
     WifiSystemResOverlay \
-    WifiResGoogleOverlay \
-    WifiResMainlineOverlay \
     WifiResOverlay

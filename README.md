@@ -45,13 +45,20 @@ shipped. Neither of its RPMB peers exists on this device (no
 without `trustonic,real-drv` in the DTB), so it only retried forever. The
 Microtrust TEE handles RPMB itself.
 
-## Framework and Settings overlays
+## Unused stock overlays
 
 MediaTek's `FrameworkResOverlay`, `FrameworkResOverlayExt`,
 `MtkSettingsResOverlay` and `SettingsProviderResOverlay` are not shipped. The
 two Settings overlays carry no resources, and the framework overlays never got
 an idmap on this build. The device tree's `FrameworkResDeviceOverlay` carries
 their values that still apply on Android 17.
+
+The overlays for Google's module packages (`NetworkStackGoogleGoResOverlay`,
+`NetworkStackGoogleResOverlay`, `TetheringGoogleResOverlay`,
+`WifiResGoogleOverlay`, `WifiResMainlineOverlay`,
+`WifiSystemResMainlineOverlay`) are not shipped either. Their targets
+(`com.google.android.wifi.resources`, `com.google.android.networkstack` and
+friends) do not exist on LineageOS, with or without gapps.
 
 ## Git LFS
 
