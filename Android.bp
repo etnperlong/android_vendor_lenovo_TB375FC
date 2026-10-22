@@ -19914,32 +19914,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libisetrusty",
-    check_elf_files: false,
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libisetrusty.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libjpeg-alpha-oal_vendor",
     check_elf_files: false,
     owner: "lenovo",
@@ -36702,37 +36676,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "libbase",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "mtk_storageproxyd",
-    check_elf_files: false,
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/mtk_storageproxyd",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libhardware_legacy",
-                "libcutils",
-                "libisetrusty",
-                "libnl",
                 "libc++",
                 "libc",
                 "libm",

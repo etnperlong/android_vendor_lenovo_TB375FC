@@ -389,7 +389,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/motorola.hardware.input@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.input@1.1-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/init/mtk_storageproxyd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_storageproxyd.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/mtklog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtklog.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/mtkpower_applist-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkpower_applist-mtk-default.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
@@ -1499,7 +1498,6 @@ PRODUCT_PACKAGES += \
     libifcutils_mtk \
     libimagebuffer_wrapper \
     libimsg_log \
-    libisetrusty \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libkeystore-engine-wifi-hidl \
@@ -1995,7 +1993,6 @@ PRODUCT_PACKAGES += \
     jpegtool \
     mtk_lbs_service \
     mtk_plpath_utils_ota \
-    mtk_storageproxyd \
     muxreport \
     netdagent \
     netdc \

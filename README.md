@@ -37,6 +37,14 @@ quality JNI and client libraries are not shipped. Stock does not expose
 MiraVision, its JNI libraries cannot load on Android 17, and nothing else uses
 them. The vendor picture quality HAL is unchanged.
 
+## Storage proxy
+
+MediaTek's `mtk_storageproxyd`, its init script and `libisetrusty.so` are not
+shipped. Neither of its RPMB peers exists on this device (no
+`/dev/trusty-ipc-dev1`; `rpmb-mtk` registers no Trustonic netlink family
+without `trustonic,real-drv` in the DTB), so it only retried forever. The
+Microtrust TEE handles RPMB itself.
+
 ## Git LFS
 
 One blob exceeds GitHub's 100 MB per-file limit and is stored with Git LFS:
