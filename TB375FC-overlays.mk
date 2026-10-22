@@ -13,10 +13,6 @@ PRODUCT_PACKAGES += \
     NavigationBarModeGesturalOverlay \
     WifiSystemResMainlineOverlay \
     WifiSystemResOverlay \
-    FrameworkResOverlay \
-    FrameworkResOverlayExt \
-    MtkSettingsResOverlay \
-    SettingsProviderResOverlay \
     WifiResGoogleOverlay \
     WifiResMainlineOverlay \
     WifiResOverlay

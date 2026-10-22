@@ -37856,54 +37856,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "FrameworkResOverlay",
-    owner: "lenovo",
-    apk: "proprietary/vendor/overlay/FrameworkResOverlay/FrameworkResOverlay.apk",
-    presigned: true,
-    preprocessed: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    vendor: true,
-}
-
-android_app_import {
-    name: "FrameworkResOverlayExt",
-    owner: "lenovo",
-    apk: "proprietary/vendor/overlay/FrameworkResOverlayExt/FrameworkResOverlayExt.apk",
-    presigned: true,
-    preprocessed: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    vendor: true,
-}
-
-android_app_import {
-    name: "MtkSettingsResOverlay",
-    owner: "lenovo",
-    apk: "proprietary/vendor/overlay/MtkSettingsResOverlay/MtkSettingsResOverlay.apk",
-    presigned: true,
-    preprocessed: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    vendor: true,
-}
-
-android_app_import {
-    name: "SettingsProviderResOverlay",
-    owner: "lenovo",
-    apk: "proprietary/vendor/overlay/SettingsProviderResOverlay/SettingsProviderResOverlay.apk",
-    presigned: true,
-    preprocessed: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    vendor: true,
-}
-
-android_app_import {
     name: "WifiResGoogleOverlay",
     owner: "lenovo",
     apk: "proprietary/vendor/overlay/WifiResGoogleOverlay/WifiResGoogleOverlay.apk",

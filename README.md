@@ -45,6 +45,14 @@ shipped. Neither of its RPMB peers exists on this device (no
 without `trustonic,real-drv` in the DTB), so it only retried forever. The
 Microtrust TEE handles RPMB itself.
 
+## Framework and Settings overlays
+
+MediaTek's `FrameworkResOverlay`, `FrameworkResOverlayExt`,
+`MtkSettingsResOverlay` and `SettingsProviderResOverlay` are not shipped. The
+two Settings overlays carry no resources, and the framework overlays never got
+an idmap on this build. The device tree's `FrameworkResDeviceOverlay` carries
+their values that still apply on Android 17.
+
 ## Git LFS
 
 One blob exceeds GitHub's 100 MB per-file limit and is stored with Git LFS:
