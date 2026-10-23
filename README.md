@@ -1,10 +1,11 @@
-# TB375FC vendor blobs - LineageOS 24.0
+# TB375FC vendor blobs - DerpFest 17
 
 Proprietary vendor files for the Lenovo Xiaoxin Pad Pro 12.7 (2025), `TB375FC`
-(MediaTek Dimensity 8300 / MT6897), for LineageOS 24.0 (Android 17).
+(MediaTek Dimensity 8300 / MT6897), for DerpFest 17 (Android 17).
 
 Vendor updates are sourced from PRC ZUX `1.5.10.103` / P16.
-Existing Lineage adaptations and retained components are preserved.
+Existing Lineage-derived adaptations and retained components are preserved;
+this documentation update does not change vendor binaries.
 
 ## DRM
 
@@ -56,9 +57,8 @@ their values that still apply on Android 17.
 The overlays for Google's module packages (`NetworkStackGoogleGoResOverlay`,
 `NetworkStackGoogleResOverlay`, `TetheringGoogleResOverlay`,
 `WifiResGoogleOverlay`, `WifiResMainlineOverlay`,
-`WifiSystemResMainlineOverlay`) are not shipped either. Their targets
-(`com.google.android.wifi.resources`, `com.google.android.networkstack` and
-friends) do not exist on LineageOS, with or without gapps.
+`WifiSystemResMainlineOverlay`) are not shipped in this vendor repository.
+Whether their target packages are present depends on the ROM integration.
 
 ## Git LFS
 
