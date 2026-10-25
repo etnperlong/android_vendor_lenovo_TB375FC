@@ -416,7 +416,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.microtrust.hardware.ifaa-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.ifaa-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter-service.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
@@ -621,7 +620,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/vendor.lenovo.hardware.performance-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.lenovo.hardware.performance-service.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/vendor.lenovo.hardware.touchscreen-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.lenovo.hardware.touchscreen-service.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/vendor.lenovo.hardware.usb.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.lenovo.hardware.usb.xml \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vibrator-mtk-default.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -890,7 +888,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/android.hardware.thermal-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.thermal-V1-ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/android.hardware.usb-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb-V1-ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/android.hardware.usb.gadget-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb.gadget-V1-ndk.so \
-    vendor/lenovo/TB375FC/proprietary/vendor/lib64/android.hardware.vibrator-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.vibrator-V2-ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/android.hardware.wifi-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi-V1-ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/android.hardware.wifi.hostapd-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.hostapd-V1-ndk.so \
     vendor/lenovo/TB375FC/proprietary/vendor/lib64/android.hardware.wifi.supplicant-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi.supplicant-V2-ndk.so \
@@ -1945,7 +1942,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek \
     android.hardware.usb-aidl-service.mediatekv1.0 \
     android.hardware.usb.gadget-aidl-service.mediatekv1.0 \
-    android.hardware.vibrator-service.mediatek \
     dvs-hidl-service \
     interfaces.factoryInterface@1.0-service \
     motorola.hardware.input@1.1-service \
