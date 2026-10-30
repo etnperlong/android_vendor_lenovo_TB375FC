@@ -3,7 +3,7 @@
 Proprietary vendor files for the Lenovo Xiaoxin Pad Pro 12.7 (2025), `TB375FC`
 (MediaTek Dimensity 8300 / MT6897), for LineageOS 24.0 (Android 17).
 
-Vendor updates are sourced from PRC ZUX `1.5.10.103` / P16.
+Vendor updates are sourced from PRC ZUX `1.5.10.123` / P34.
 Existing Lineage adaptations and retained components are preserved.
 
 ## DRM
@@ -12,7 +12,7 @@ The device tree builds AOSP Android 17 ClearKey as the official service APEX.
 The stock ClearKey DRM service and its MediaDrm plugins are no longer shipped;
 the extraction fixup also removes the old META init import.
 
-The `.103` Widevine APEX, OEMCrypto, TEE libraries and trusted-app files remain
+The `.123` Widevine APEX, OEMCrypto, TEE libraries and trusted-app files remain
 unchanged. Their extraction integrity has been checked against the local stock
 dump; Android 17 linkage, provisioning, L1 and playback still require a build
 and device validation.

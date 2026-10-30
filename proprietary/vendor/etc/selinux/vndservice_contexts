@@ -7,14 +7,7 @@ manager                 u:object_r:service_manager_vndservice:s0
 # ==============================================
 # MTK Policy Rule
 # ==============================================
-# NOTE: stock has the line:
-#   android.IRemosaicDaemon u:object_r:remosaic_daemon_service:s0
-# but the `remosaic_daemon_service` type is only declared in stock's
-# precompiled_sepolicy, not in any .te source LOS recompiles from.
-# checkfc validates the freshly-compiled precompiled_sepolicy, which
-# doesn't know the type, so the line breaks the build. Our device has
-# no camera => no IRemosaicDaemon service to register => safe to omit.
-# Real fix would be a .te declaring the type + associated rules.
 
+android.IRemosaicDaemon u:object_r:remosaic_daemon_service:s0
 #line 1 "out_hal/soong/.intermediates/system/sepolicy/contexts/vndservice_contexts/android_common/gen/newline"
 

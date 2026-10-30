@@ -3,6 +3,12 @@ persist.odm.bt.address u:object_r:vendor_nvram_lenovo_prop:s0
 #ro.odm.lenovo.btaddr u:object_r:vendor_wt_bt_mac_prop:s0
 #line 1 "out_hal/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/newline"
 
+#line 1 "lenovo/lgsi/vendor/sepolicy/dynamicdata/common/property_contexts"
+vendor.storage.dynamicdata.backup.sz u:object_r:vendor_dynamicdata_prop:s0
+ro.vendor.storage.dynamicdata u:object_r:vendor_dynamicdata_prop:s0
+vendor.storage.dynamicdata.type u:object_r:vendor_dynamicdata_prop:s0
+#line 1 "out_hal/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/newline"
+
 #line 1 "lenovo/lgsi/vendor/sepolicy/property/common/property_contexts"
 ro.odm.lenovo.              u:object_r:vendor_lenovotb_init_prop:s0
 persist.odm.lenovo.         u:object_r:vendor_lenovotb_init_prop:s0
@@ -23,7 +29,13 @@ ro.odm.lenovo.carrier.code   u:object_r:vendor_lenovotb_init_prop:s0
 ro.odm.lenovo.pro_netflix    u:object_r:vendor_lenovotb_init_prop:s0
 ro.odm.lenovo.pro_eea        u:object_r:vendor_lenovotb_init_prop:s0
 
+ro.boot.gsn                  u:object_r:vendor_lenovotb_init_prop:s0
+ro.boot.pcbaserialno         u:object_r:vendor_lenovotb_init_prop:s0
 
+#line 1 "out_hal/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/newline"
+
+#line 1 "lenovo/lgsi/vendor/sepolicy/pccsec/vendor/property_contexts"
+persist.vendor.tianxikey_is_ready  u:object_r:vendor_tianxikey_persist_prop:s0
 #line 1 "out_hal/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/newline"
 
 #line 1 "device/mediatek/sepolicy/base/vendor/property_contexts"
@@ -397,8 +409,6 @@ vendor.mtk.factory.start u:object_r:vendor_mtk_factory_start_prop:s0
 persist.vendor.camera.cam.list u:object_r:vendor_mtk_hal_camera_prop:s0
 persist.vendor.main_back.otp_check  u:object_r:vendor_mtk_hal_camera_prop:s0
 persist.vendor.main_sub.otp_check  u:object_r:vendor_mtk_hal_camera_prop:s0
-vendor.camera.sn.main u:object_r:vendor_mtk_hal_camera_prop:s0
-vendor.camera.sn.front u:object_r:vendor_mtk_hal_camera_prop:s0
 
 # mtk loading module property
 vendor.all.modules.ready u:object_r:vendor_mtk_device_prop:s0
@@ -806,6 +816,7 @@ ro.vendor.mtk_flp_support u:object_r:vendor_mtk_flp_prop:s0
 ro.vendor.mtk_geofence_support u:object_r:vendor_mtk_geofence_prop:s0
 
 # MAGT support property
+ro.vendor.magt. u:object_r:vendor_mtk_magt_prop:s0
 
 ro.vendor.mtk_femto_cell_support  u:object_r:vendor_mtk_default_prop:s0
 
@@ -933,7 +944,7 @@ persist.vendor.radio.factory_sn         u:object_r:vendor_mtk_radio_prop:s0
 odm.ril.radio.status.                   u:object_r:vendor_mtk_radio_prop:s0
 #line 1 "out_hal/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/newline"
 
-#line 1 "vendor/dolby/vision/codec2/sepolicy/dvs/property_contexts"
+#line 1 "vendor/dolby/vision/service/sepolicy/hidl/property_contexts"
 # DOLBY_START
 persist.vendor.dolbyv.      u:object_r:vendor_dolbyv_prop:s0
 vendor.dolbyv.              u:object_r:vendor_dolbyv_prop:s0
@@ -946,10 +957,3 @@ vendor.dolbyv.              u:object_r:vendor_dolbyv_prop:s0
 # customizations.
 #line 1 "out_hal/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/newline"
 
-
-# Re-synced from stock A16: magt and dynamicdata property types are now
-# declared in vendor_sepolicy.cil, so map them to their real types.
-ro.vendor.magt. u:object_r:vendor_mtk_magt_prop:s0
-ro.vendor.storage.dynamicdata u:object_r:vendor_dynamicdata_prop:s0
-vendor.storage.dynamicdata.backup.sz u:object_r:vendor_dynamicdata_prop:s0
-vendor.storage.dynamicdata.type u:object_r:vendor_dynamicdata_prop:s0

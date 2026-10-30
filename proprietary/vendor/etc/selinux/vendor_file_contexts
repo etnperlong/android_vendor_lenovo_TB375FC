@@ -127,6 +127,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service          u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.0-service          u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.wifi-service-lazy           u:object_r:hal_wifi_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lenovo\.hardware\.usb-service      u:object_r:hal_lenovousb_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.atrace@1\.0-service         u:object_r:hal_atrace_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service          u:object_r:hal_gatekeeper_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health@1\.0-service         u:object_r:hal_health_default_exec:s0
@@ -165,8 +166,8 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.tv\.cec@1\.[01]-service        u:object_r:hal_tv_cec_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-lazy      u:object_r:hal_wifi_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lenovo\.hardware\.battery-service      u:object_r:hal_lenovobattery_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lenovo\.hardware\.factory-service      u:object_r:hal_lenovofactory_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lenovo\.hardware\.display-service      u:object_r:hal_lenovodisplay_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lenovo\.hardware\.factory-service      u:object_r:hal_lenovofactory_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss-service\.mediatek                    u:object_r:mtk_hal_gnss_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.2-mediatek                   u:object_r:mtk_hal_c2_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.automotive\.can-service  u:object_r:hal_can_socketcan_exec:s0
@@ -248,6 +249,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.contexthub@1\.[0-9]+-service     u:object_r:hal_contexthub_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power.stats-service\.example    u:object_r:hal_power_stats_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service(\.multihal)?  u:object_r:hal_sensors_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lenovo\.hardware\.hyperschedule-service      u:object_r:hal_lenovohyperschedule_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.nwk_opt@1\.0-service u:object_r:mtk_hal_nwk_opt_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.touchll@1\.0-service u:object_r:mtk_hal_touchll_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.fingerprint-service u:object_r:hal_fingerprint_default_exec:s0
@@ -408,7 +410,6 @@
 /dev/eemcs.*    u:object_r:eemcs_device:s0
 /dev/ttyGS.*   u:object_r:ttyGS_device:s0
 /dev/ttyMT.*   u:object_r:ttyMT_device:s0
-/lenovoraw(/.*)?                                                    u:object_r:lenovoraw_file:s0
 /data/core(/.*)?                    u:object_r:aee_core_data_file:s0
 /data/mdl3(/.*)?                    u:object_r:mdlog_data_file:s0
 /dev/ampc0(/.*)?    u:object_r:ampc0_device:s0
@@ -428,7 +429,6 @@
 /dev/radio(/.*)?       u:object_r:mtk_radio_device:s0
 /meta_init\..*    u:object_r:rootfs:s0
 /enableswap.sh    u:object_r:rootfs:s0
-/lenovocust(/.*)?                                                   u:object_r:lenovocust_file:s0
 /data/mdlog(/.*)?                   u:object_r:mdlog_data_file:s0
 /dev/accdet(/.*)?   u:object_r:accdet_device:s0
 /dev/MAINAF(/.*)?  u:object_r:MAINAF_device:s0
@@ -459,6 +459,7 @@
 /dev/adsp_1(/.*)?    u:object_r:adsp_device:s0
 /dev/als_ps(/.*)?     u:object_r:als_ps_device:s0
 /dev/hidraw[0-9]*                  u:object_r:hidraw_device:s0
+/lenovocust(/.*)? u:object_r:lenovocust_file:s0
 /dev/gpsmdl.*(/.*)? u:object_r:gpsmdl_device:s0
 /vendor/lib(/.*)?\.hbtf u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libusc\.so              u:object_r:same_process_hal_file:s0
@@ -714,6 +715,7 @@
 /data/vendor/afw(/.*)? u:object_r:hal_afw_file:s0
 /data/vendor/tee(/.*)? u:object_r:tee_data_file:s0
 /persist/factory(/.*)?                                                      u:object_r:factory_persist_file:s0
+/mnt/lenovobackup(/.*)? u:object_r:lenovobackup_file:s0
 /data/vendor/core(/.*)?             u:object_r:aee_core_vendor_file:s0
 /data/vendor/gnss(/.*)?             u:object_r:gnss_data_file:s0
 /data/vendor/chre(/.*)? u:object_r:chre_data_file:s0
@@ -827,6 +829,7 @@
 /mnt/vendor/protect_s(/.*)? u:object_r:protect_s_data_file:s0
 /dev/block/by-name/lk(_[ab])?                       u:object_r:lk_block_device:s0
 /dev/block/by-name/gz([12]|_[ab])                   u:object_r:gz_block_device:s0
+/vendor/bin/hw/vendor.dolby.media.c2-service-vision  u:object_r:vendorcodec_exec:s0
 /dev/block/by-name/dpm.*                            u:object_r:dpm_block_device:s0
 /data/vendor/t6/tkcore.log u:object_r:tkcore_log_file:s0
 /data/vendor/agps_supl(/.*)?        u:object_r:agpsd_data_file:s0
@@ -860,11 +863,13 @@
 /dev/socket/rild-dongle(/.*)?    u:object_r:rild-dongle_socket:s0
 /dev/socket/rild-mtk-ut(/.*)?        u:object_r:rild_mtk_ut_socket:s0
 /mnt/vendor/firmware/md(/.*)?  u:object_r:thinmd_fw_file:s0
+/dev/socket/lbs_dbg_ext(/.*)? u:object_r:lbs_dbg_ext_socket:s0
 /data/vendor/mcRegistry(/.*)? u:object_r:mobicore_data_file:s0
 /dev/block/by-name/boot(_[ab])?                     u:object_r:boot_block_device:s0
 /dev/block/by-name/dtbo(_[ab])?                     u:object_r:dtbo_block_device:s0
 /dev/block/by-name/logo(_[ab])?                     u:object_r:logo_block_device:s0
 /dev/block/by-name/sspm(_[ab])?                     u:object_r:sspm_block_device:s0
+/vendor/bin/hw/motorola.hardware.pccsec-service  u:object_r:vendor_hal_pccsecd_mot_exec:s0
 /vendor/firmware/connfem.cfg      u:object_r:connsys_vendor_file:s0
 /data/vendor/misc/msdata(/.*)? u:object_r:omadm_misc_file:s0
 /data/vendor/camera_dump(/.*)? u:object_r:vendor_camera_dump_file:s0
@@ -993,18 +998,17 @@
 /dev/socket/rild-mtk-modem-md2(/.*)? u:object_r:rild_mtk_modem_md2_socket:s0
 /dev/socket/thermal_hal_socket(/.*)? u:object_r:thermal_hal_socket:s0
 /dev/block/by-name/vendor_boot(_[ab])?              u:object_r:boot_block_device:s0
+/sys/devices/platform/11201000.usb0(/.*)?                              u:object_r:sysfs_usb:s0
 /dev/block/by-name/connsys_wifi(_[ab])?             u:object_r:connsys_wifi_block_device:s0
 /dev/block/by-name/connsys_gnss(_[ab])?             u:object_r:connsys_gnss_block_device:s0
-/dev/block/platform/soc/4804000.ufshc/by-name/lenovoraw             u:object_r:frp_block_device:s0
-/dev/block/platform/soc/4804000.ufshc/by-name/lenovocust            u:object_r:lenovocust_block_device:s0
 /vendor/firmware/valhall-1691526.wa u:object_r:same_process_hal_file:s0
-/sys/devices/platform/soc/mt_usb(/.*)?                              u:object_r:sysfs_usb:s0
-/sys/devices/platform/soc/4e00000.ssusb/otg_enable                  u:object_r:sysfs_usb:s0
+/sys/devices/platform/soc/11201000.usb0/otgenable                      u:object_r:sysfs_usb:s0
 /vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service\.widevine      u:object_r:hal_drm_widevine_exec:s0
 /vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service\.clearkey      u:object_r:hal_drm_clearkey_exec:s0
 /vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service-lazy\.widevine u:object_r:hal_drm_widevine_exec:s0
 /vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service-lazy\.clearkey u:object_r:hal_drm_clearkey_exec:s0
 /vendor/bin/hw/android\.hardware\.boot@[0-9]+\.[0-9]+-service-lazy u:object_r:hal_bootctl_default_exec:s0
+/mnt/vendor/persist/security/slab/pcc_key.bin    u:object_r:persist_ai_key:s0
 /vendor/bin/hw/android\.hardware\.drm-service(-lazy)?\.widevine  u:object_r:hal_drm_widevine_exec:s0
 /dev/etb         u:object_r:etb_device:s0
 /dev/otp                   u:object_r:otp_device:s0
@@ -1131,6 +1135,7 @@
 /vendor/bin/md_monitor u:object_r:md_monitor_exec:s0
 /vendor/bin/dcxosetcap u:object_r:DcxoSetCap_exec:s0
 /vendor/bin/emdloggerv            u:object_r:emdloggerv_exec:s0
+/vendor/bin/dynamicdata u:object_r:dynamicdata_exec:s0
 /dev/socket/rildc-debug        u:object_r:rild_via_socket:s0
 /dev/block/mmcblk0boot0                                                                                     u:object_r:preloader_block_device:s0
 /dev/block/mmcblk0boot1                                                                                     u:object_r:preloader_block_device:s0
@@ -1146,6 +1151,7 @@
 /dev/block/by-name/secro                            u:object_r:secro_block_device:s0
 /dev/block/by-name/super                            u:object_r:super_block_device:s0
 /dev/ccci_ccb_md_monitor  u:object_r:ccci_mdmonitor_device:s0
+/vendor/bin/vendor_mke2fs u:object_r:vendor_e2fs_exec:s0
 /dev/socket/rild-ctclient        u:object_r:rild_ctclient_socket:s0
 /dev/socket/rild-atci-c2k      u:object_r:rild_via_socket:s0
 /dev/block/by-name/nvdata                           u:object_r:nvdata_device:s0
@@ -1157,7 +1163,6 @@
 /dev/block/by-name/proinfo                          u:object_r:nvram_device:s0
 /vendor/bin/init\.insmod\.sh u:object_r:init_insmod_sh_exec:s0
 /vendor/bin/tee-supplicant u:object_r:tee_exec:s0
-/vendor/bin/hw/dolbycodec2  u:object_r:vendorcodec_exec:s0
 /dev/block/by-name/keystore                         u:object_r:keystore_block_device:s0
 /dev/block/by-name/metadata                         u:object_r:metadata_block_device:s0
 /dev/block/by-name/protect1                         u:object_r:protect1_block_device:s0
@@ -1166,20 +1171,22 @@
 /dev/block/by-name/userdata                         u:object_r:userdata_block_device:s0
 /vendor/bin/eara_io_service u:object_r:eara_io_exec:s0
 /vendor/bin/mtk_pkm_service u:object_r:mtk_pkm_service_exec:s0
-/dev/block/by-name/lenovoraw                                        u:object_r:frp_block_device:s0
+/vendor/bin/make_f2fs_vendor u:object_r:vendor_make_f2fs_exec:s0
 /dev/dma_heap/mtk_svp_region                     u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/mtk_wfd_region                     u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/block/by-name/boot_para                        u:object_r:boot_para_block_device:s0
 /vendor/bin/nfcstackp-vendor u:object_r:nfcstackp_vendor_exec:s0
-/dev/block/by-name/lenovocust                                       u:object_r:lenovocust_block_device:s0
+/dev/block/by-name/lenovoraw                        u:object_r:frp_block_device:s0
 /dev/dma_heap/mtk_mm-uncached                    u:object_r:dmabuf_system_heap_device:s0
 /dev/dma_heap/mtk_prot_region                    u:object_r:dmabuf_system_secure_heap_device:s0
 /vendor/bin/mtk_storageproxyd u:object_r:tee_exec:s0
 /sys/class/smartpa/re25_calib     u:object_r:sysfs_re25_calib:s0
+/dev/block/by-name/lenovocust                       u:object_r:lenovocust_block_device:s0
 /proc/android_touch/self_test               u:object_r:proc_android_touch:s0
 /dev/dma_heap/mtk_2d_fr_region                   u:object_r:dmabuf_system_secure_heap_device:s0
 /data/aee_exp/perfetto_configs      u:object_r:trace_data_file:s0
 /vendor/bin/init\.pstore_blk\.sh u:object_r:init_pstore_blk_sh_exec:s0
+/vendor/bin/hw/dvs-hidl-service  u:object_r:hal_dvs_default_exec:s0
 /vendor/bin/loghidlvendorservice    u:object_r:loghidlvendorservice_exec:s0
 /vendor/bin/irqmon\.graphtracer\.sh    u:object_r:irqmon_graphtracer_exec:s0
 /dev/block/by-name/preloader_raw_a                     u:object_r:postinstall_block_device:s0
@@ -1199,27 +1206,11 @@
 /vendor/bin/rkp_factory_extraction_tool64 u:object_r:csr_lenovofactory_default_exec:s0
 /dev/dma_heap/mtk_sapu_data_shm_region-aligned   u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/mtk_sapu_engine_shm_region-aligned u:object_r:dmabuf_system_secure_heap_device:s0
-/vendor/bin/hw/vendor\.dolby\.media\.c2@1\.0-service            u:object_r:mediacodec_exec:s0
 /vendor/bin/hw/arm\.mali\.platform-service\.mediatek u:object_r:mtk_hal_mali_platform_default_exec:s0
 /dev/block/platform/bootdevice/by-name/preloader_raw_a u:object_r:postinstall_block_device:s0
 /dev/block/platform/bootdevice/by-name/preloader_raw_b u:object_r:postinstall_block_device:s0
 /vendor/bin/hw/vendor\.mediatek\.hardware\.aee@V1-service u:object_r:aee_hal_exec:s0
 /vendor/bin/hw/vendor\.mediatek\.hardware\.aee@1\.0-service u:object_r:aee_hal_exec:s0
 /vendor/bin/hw/vendor\.mediatek\.hardware\.aee@1\.1-service u:object_r:aee_hal_exec:s0
-/vendor/bin/hw/android\.hardware\.contexthub-service\.tinysys    u:object_r:hal_contexthub_default_exec:s0
-
-# Re-synced from stock A16: labels for the dvs (Dolby Vision), hyperschedule
-# and usb HAL services, boot-time fsck (vendor_mke2fs / make_f2fs_vendor),
-# dynamicdata, and the lbs debug socket. Types added to vendor_sepolicy.cil.
-/(vendor|system/vendor)/bin/hw/vendor\.lenovo\.hardware\.hyperschedule-service      u:object_r:hal_lenovohyperschedule_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lenovo\.hardware\.usb-service      u:object_r:hal_lenovousb_default_exec:s0
-/dev/socket/lbs_dbg_ext(/.*)? u:object_r:lbs_dbg_ext_socket:s0
-/mnt/lenovobackup(/.*)? u:object_r:lenovobackup_file:s0
-/sys/devices/platform/11201000.usb0(/.*)?                              u:object_r:sysfs_usb:s0
-/sys/devices/platform/soc/11201000.usb0/otgenable                      u:object_r:sysfs_usb:s0
-/vendor/bin/dynamicdata u:object_r:dynamicdata_exec:s0
-/vendor/bin/hw/dvs-hidl-service  u:object_r:hal_dvs_default_exec:s0
-/vendor/bin/hw/vendor.dolby.media.c2-service-vision  u:object_r:vendorcodec_exec:s0
 /vendor/bin/hw/vendor\.dolby\.media\.c2-default-service-dax            u:object_r:mediacodec_exec:s0
-/vendor/bin/make_f2fs_vendor u:object_r:vendor_make_f2fs_exec:s0
-/vendor/bin/vendor_mke2fs u:object_r:vendor_e2fs_exec:s0
+/vendor/bin/hw/android\.hardware\.contexthub-service\.tinysys    u:object_r:hal_contexthub_default_exec:s0
