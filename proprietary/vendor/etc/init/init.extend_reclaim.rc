@@ -9,11 +9,6 @@ on property:sys.boot_completed=1
     chown root system /sys/kernel/extend_reclaim/reclaim
     chmod 0664 /sys/kernel/extend_reclaim/reclaim
 
-    trigger swapon_zram
-
 on property:persist.sys.zram_wb_enabled=true && property:persist.sys.wb_zram_size=3
     write /proc/sys/vm/min_free_kbytes 65536
-
-on swapon_zram
-    swapon_all /vendor/etc/fstab.zram_wb
 

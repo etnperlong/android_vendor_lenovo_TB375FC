@@ -292,12 +292,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.emmc \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/fstab.mt6897:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6897 \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/fstab.mt6897dm:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6897dm \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/fstab.mt8792:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt8792 \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/fstab.mt8792dm:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt8792dm \
-    vendor/lenovo/TB375FC/proprietary/vendor/etc/fstab.zram_wb:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram_wb \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/genshin.dla:$(TARGET_COPY_OUT_VENDOR)/etc/genshin.dla \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
     vendor/lenovo/TB375FC/proprietary/vendor/etc/gralloc/dpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu.xml \
